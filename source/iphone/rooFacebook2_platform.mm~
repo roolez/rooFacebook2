@@ -1,0 +1,1098 @@
+/*
+ * iphone-specific implementation of the rooFacebook2 extension.
+ * Add any platform-specific functionality here.
+ */
+/*
+ * NOTE: This file was originally written by the extension builder, but will not
+ * be overwritten (unless --force is specified) and is intended to be modified.
+ */
+#include "rooFacebook2_internal.h"
+#import "FBConnect.h"
+#import "rooFacebook2.h"
+#include "s3eDebug.h"
+#include "s3eEdk.h"
+#include "s3eEdk_iphone.h"
+
+#include "JSON.h"
+
+@class FBSessionDelegateImpl;
+@class FBDialogDelegateImpl;
+@class FBRequestDelegateImpl;
+
+
+
+enum rooFacebook_Callback{
+    e_rooFacebook_session,
+    e_rooFacebook_dialog,
+    e_rooFacebook_request,
+    e_rooFacebook_MAX
+};
+
+
+
+struct rooFacebook_Session{
+    FBSessionDelegateImpl * delegate;
+    Facebook *facebook;
+};
+struct rooFacebook_Dialog{
+    FBDialogDelegateImpl * delegate;
+    void * userData;
+    rooFacebook_CallbackSpecific callback;
+};
+struct rooFacebook_Request{
+    FBRequestDelegateImpl * delegate;
+};
+
+
+//-------------------------------------------------------
+// delegates
+//-------------------------------------------------------
+
+
+@interface FBSessionDelegateImpl : NSObject <FBSessionDelegate>
+{
+@public
+    //    s3eFBSession m_s3eFBSession;
+    rooFacebook_Session * m_external;
+    Facebook *facebook;
+@private
+    //    Facebook *m_session;
+    //    NSString *m_appId;
+    
+    //    s3eBool m_loggedIn;
+    //    s3eFBLoginCallbackFn m_loginCallback;
+    
+}
+
+//@property(readonly) Facebook* session;
+//@property(readonly) s3eBool loggedIn;
+
+@property (nonatomic, retain) Facebook *facebook;
+
+-(id) init;
+
+-(id) initWithExternal:(rooFacebook_Session*) external;
+
+-(id) initWithSession:(Facebook *)session appId:(NSString *)appId;
+// -(void) loginWithCallback:(s3eFBLoginCallbackFn) cb cbData:(void *)cbData permissions:(NSArray *)permissions;
+-(void) logout;
+-(void) callCallback:(void*) systemData size:(int) size;
+-(void) handleOpenURL:(NSURL *)URL;
+
+- (void)fbDidLogin;
+- (void)fbDidNotLogin:(BOOL)cancelled;
+- (void)fbDidLogout;
+
+// Pre 4.2 support
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url;
+
+// For 4.2+ support
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
+
+- (void)fbSessionInvalidated;
+
+@end
+
+//-------------------------------------------------------
+@interface FBDialogDelegateImpl : NSObject <FBDialogDelegate>
+{
+@public
+    rooFacebook_Dialog * m_external;
+@private
+    
+}
+
+-(id) initWithExternalDialog:(rooFacebook_Dialog*) external;
+
+
+-(void) callCallback:(void*) systemData size:(int) size;
+
+
+/**
+ * Called when the dialog succeeds and is about to be dismissed.
+ */
+- (void)dialogDidComplete:(FBDialog *)dialog;
+
+/**
+ * Called when the dialog succeeds with a returning url.
+ */
+- (void)dialogCompleteWithUrl:(NSURL *)url;
+
+/**
+ * Called when the dialog get canceled by the user.
+ */
+- (void)dialogDidNotCompleteWithUrl:(NSURL *)url;
+
+/**
+ * Called when the dialog is cancelled and is about to be dismissed.
+ */
+- (void)dialogDidNotComplete:(FBDialog *)dialog;
+
+/**
+ * Called when dialog failed to load due to an error.
+ */
+- (void)dialog:(FBDialog*)dialog didFailWithError:(NSError *)error;
+
+/**
+ * Asks if a link touched by a user should be opened in an external browser.
+ *
+ * If a user touches a link, the default behavior is to open the link in the Safari browser,
+ * which will cause your app to quit.  You may want to prevent this from happening, open the link
+ * in your own internal browser, or perhaps warn the user that they are about to leave your app.
+ * If so, implement this method on your delegate and return NO.  If you warn the user, you
+ * should hold onto the URL and once you have received their acknowledgement open the URL yourself
+ * using [[UIApplication sharedApplication] openURL:].
+ */
+- (BOOL)dialog:(FBDialog*)dialog shouldOpenURLInExternalBrowser:(NSURL *)url;
+
+
+@end
+//-------------------------------------------------------
+@interface FBRequestDelegateImpl : NSObject <FBRequestDelegate>
+{
+@public
+    rooFacebook_Request * m_external;
+@private
+}
+
+-(id) initWithExternalRequest:(rooFacebook_Request*) external;
+
+
+-(void) callCallback:(void*) systemData size:(int) size;
+
+
+/**
+ * Called just before the request is sent to the server.
+ */
+- (void)requestLoading:(FBRequest *)request;
+
+/**
+ * Called when the server responds and begins to send back data.
+ */
+- (void)request:(FBRequest *)request didReceiveResponse:(NSURLResponse *)response;
+
+/**
+ * Called when an error prevents the request from completing successfully.
+ */
+- (void)request:(FBRequest *)request didFailWithError:(NSError *)error;
+
+/**
+ * Called when a request returns and its response has been parsed into
+ * an object.
+ *
+ * The resulting object may be a dictionary, an array, a string, or a number,
+ * depending on thee format of the API response.
+ */
+- (void)request:(FBRequest *)request didLoad:(id)result;
+
+/**
+ * Called when a request returns a response.
+ *
+ * The result object is the raw response from the server of type NSData
+ */
+- (void)request:(FBRequest *)request didLoadRawResponse:(NSData *)data;
+@end
+//-------------------------------------------------------
+//-------------------------------------------------------
+//-------------------------------------------------------
+
+
+
+//-------------------------------------------------------
+//  implementation
+//-------------------------------------------------------
+
+
+
+@implementation FBSessionDelegateImpl
+
+//@synthesize session = m_session;
+//@synthesize loggedIn = m_loggedIn;
+
+@synthesize facebook;
+
+-(id) init
+{
+    s3eDebugOutputString("init");
+    if (!(self = [super init]))
+        return nil;
+    return self;
+}
+
+-(id) initWithExternal:(rooFacebook_Session*) external
+{
+    s3eDebugOutputString("initWithExternal");
+    if (!(self = [super init]))
+        return nil;
+    m_external = external;
+    return self;
+}
+
+-(id) initWithSession:(Facebook *)session appId:(NSString *)appId
+{
+    
+}
+
+- (void)dealloc
+{
+    
+    s3eDebugOutputString("dealloc");
+    
+    [super dealloc];
+}
+/*
+ -(void) loginWithCallback:(s3eFBLoginCallbackFn) cb cbData:(void *)cbData
+ permissions:(NSArray *)permissions
+ {
+ m_loginCallback = cb;
+ if (m_loginCallback)
+ {
+ // Register callback
+ EDK_CALLBACK_REG_SPECIFIC(
+ FACEBOOK,
+ LOGIN,
+ (s3eEdkCallbackSpecific)cb,
+ cbData,
+ false,
+ &m_s3eFBSession
+ );
+ }
+ 
+ // Actually log in..
+ [m_session authorize:permissions delegate:self];
+ }
+ */
+
+-(void) logout
+{
+    s3eDebugOutputString("logout");
+    [m_external->facebook logout:self];
+}
+
+-(void) callCallback:(void *)systemData size:(int) size
+{
+    //IwTrace(FACEBOOK_VERBOSE, ("Session is %s", [m_session isSessionValid] ? "valid" : "not valid"));
+    /*
+     m_loggedIn = (result == S3E_RESULT_SUCCESS) ? S3E_TRUE : S3E_FALSE;
+     
+     if (m_loginCallback)
+     {
+     // Callback
+     s3eEdkCallbacksEnqueue(
+     S3E_DEVICE_FACEBOOK,
+     S3E_FACEBOOK_CALLBACK_LOGIN,
+     &result,
+     sizeof(result),
+     &m_s3eFBSession,
+     S3E_TRUE
+     );
+     }*/
+    s3eEdkCallbacksEnqueue(S3E_EXT_ROOFACEBOOK2_HASH
+                           , e_rooFacebook_session
+                           , systemData
+                           , size
+                           , m_external
+                           , S3E_FALSE
+                           );
+}
+
+- (void)handleOpenURL:(NSURL *)URL;
+{
+    s3eDebugOutputString("handleOpenURL");
+    BOOL handled = [m_external->facebook handleOpenURL:URL];
+}
+
+- (void)fbDidLogin
+{
+    
+    
+    
+    s3eDebugOutputString("fbDidLogin");
+    s3eDebugOutputString([[m_external->facebook accessToken] UTF8String]);
+    s3eDebugOutputString([[[m_external->facebook expirationDate] description] UTF8String]);
+    
+    
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[m_external->facebook accessToken] forKey:@"FBAccessTokenKey"];
+    [defaults setObject:[m_external->facebook expirationDate] forKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
+    
+    
+    
+    NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                          @"fbDidLogin", @"method",
+                          nil ];
+    
+    NSString * s = [dic JSONRepresentation];
+    const char * data = [s UTF8String];
+    int size = strlen(data) + 1;
+    
+    [self callCallback:(void*)data size: size];   
+    
+}
+
+- (void)fbDidNotLogin:(BOOL)cancelled;
+{
+    s3eDebugOutputString("fbDidNotLogin");
+    //IwTrace(FACEBOOK_VERBOSE,("sessionDidNotLogin "));
+    
+    
+    NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                          @"fbDidNotLogin", @"method",
+                          cancelled ? @"true" : @"false", @"cancelled",
+                          nil ];
+    
+    NSString * s = [dic JSONRepresentation];
+    const char * data = [s UTF8String];
+    int size = strlen(data) + 1;
+    
+    [self callCallback:(void*)data size: size];       
+    
+    
+}
+
+- (void)fbDidLogout
+{
+    s3eDebugOutputString("fbDidLogout");
+    //IwTrace(FACEBOOK_VERBOSE,("sessionDidLogout"));
+    //m_loggedIn = S3E_FALSE;
+}
+
+
+// Pre 4.2 support
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    s3eDebugOutputString("application handleOpenURL");
+    return [facebook handleOpenURL:url];
+}
+
+// For 4.2+ support
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    s3eDebugOutputString("application openURL");
+    return [facebook handleOpenURL:url];
+}
+- (void)fbSessionInvalidated{
+    s3eDebugOutputString("fbSessionInvalidated");
+}
+
+@end
+
+//----------------------------------------------------------------------------
+
+@implementation FBDialogDelegateImpl
+
+-(id) initWithExternalDialog:(rooFacebook_Dialog*) external
+{
+    m_external = external;
+    
+    
+    return self;
+}
+
+
+-(void) callCallback:(void *)systemData size:(int) size
+{
+    //IwTrace(FACEBOOK_VERBOSE, ("Session is %s", [m_session isSessionValid] ? "valid" : "not valid"));
+    
+    s3eEdkCallbacksEnqueue(S3E_EXT_ROOFACEBOOK2_HASH
+                           , e_rooFacebook_dialog
+                           , systemData
+                           , size
+                           , m_external
+                           , S3E_FALSE
+                           );
+}
+
+
+
+- (void)dialogDidComplete:(FBDialog *)dialog{
+    s3eDebugOutputString("dialogDidComplete");
+    if(m_external->callback){
+        //m_external->callback(0, "{ \"method\": \"dialogDidComplete\" }", m_external->userData);
+        
+        const char * data = "{ \"method\": \"dialogDidComplete\" }";
+        int size = strlen(data) + 1;
+        
+        [self callCallback:(void*)data size: size];
+        
+    }
+}
+
+
+- (void)dialogCompleteWithUrl:(NSURL *)url{
+    s3eDebugOutputString("dialogCompleteWithUrl");
+    if(m_external){
+        s3eDebugOutputString("m_external");
+        if(m_external->callback){
+            s3eDebugOutputString("callback");
+            //m_external->callback(0, "{ \"method\": \"dialogCompleteWithUrl\" }", m_external->userData);
+            
+            NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  @"dialogCompleteWithUrl", @"method",
+                                  [url absoluteString], @"url",
+                                  nil ];
+            
+            NSString * s = [dic JSONRepresentation];
+            //const char * data = "{ \"method\": \"dialogCompleteWithUrl\" }";
+            const char * data = [s UTF8String];
+            int size = strlen(data) + 1;
+            
+            [self callCallback:(void*)data size: size];
+            
+            
+        }
+    }
+}
+
+
+- (void)dialogDidNotCompleteWithUrl:(NSURL *)url{
+    s3eDebugOutputString("dialogDidNotCompleteWithUrl");
+    if(m_external){
+        s3eDebugOutputString("m_external");
+        if(m_external->callback){
+            s3eDebugOutputString("callback");
+            //m_external->callback(0, "{ \"method\": \"dialogCompleteWithUrl\" }", m_external->userData);
+            
+            NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  @"dialogDidNotCompleteWithUrl", @"method",
+                                  [url absoluteString], @"url",
+                                  nil ];
+            
+            NSString * s = [dic JSONRepresentation];
+            //const char * data = "{ \"method\": \"dialogCompleteWithUrl\" }";
+            const char * data = [s UTF8String];
+            int size = strlen(data) + 1;
+            
+            [self callCallback:(void*)data size: size];
+            
+            
+        }
+    }
+}
+
+
+- (void)dialogDidNotComplete:(FBDialog *)dialog{
+    s3eDebugOutputString("dialogDidNotComplete");
+    if(m_external->callback){
+        //m_external->callback(0, "{ \"method\": \"dialogDidComplete\" }", m_external->userData);
+        
+        const char * data = "{ \"method\": \"dialogDidNotComplete\" }";
+        int size = strlen(data) + 1;
+        
+        [self callCallback:(void*)data size: size];
+        
+    }
+}
+
+
+- (void)dialog:(FBDialog*)dialog didFailWithError:(NSError *)error{
+    s3eDebugOutputString("dialog didFailWithError");
+    if(m_external){
+        s3eDebugOutputString("m_external");
+        if(m_external->callback){
+            s3eDebugOutputString("callback");
+            //m_external->callback(0, "{ \"method\": \"dialogCompleteWithUrl\" }", m_external->userData);
+            
+            NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  @"didFailWithError", @"method",
+                                  [error code], @"code",
+                                  [error domain], @"domain",
+                                  [error userInfo], @"userInfo",
+                                  [error localizedDescription], @"localizedDescription",
+                                  [error localizedRecoveryOptions], @"localizedRecoveryOptions",
+                                  [error localizedRecoverySuggestion], @"localizedRecoverySuggestion",
+                                  [error localizedFailureReason], @"localizedFailureReason",
+                                  nil ];
+            
+            NSString * s = [dic JSONRepresentation];
+            //const char * data = "{ \"method\": \"dialogCompleteWithUrl\" }";
+            const char * data = [s UTF8String];
+            int size = strlen(data) + 1;
+            
+            [self callCallback:(void*)data size: size];
+            
+            
+        }
+    }
+}
+
+
+- (BOOL)dialog:(FBDialog*)dialog shouldOpenURLInExternalBrowser:(NSURL *)url{
+    s3eDebugOutputString("dialog shouldOpenURLInExternalBrowser");
+    if(m_external){
+        s3eDebugOutputString("m_external");
+        if(m_external->callback){
+            s3eDebugOutputString("callback");
+            //m_external->callback(0, "{ \"method\": \"dialogCompleteWithUrl\" }", m_external->userData);
+            
+            NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  @"shouldOpenURLInExternalBrowser", @"method",
+                                  [url absoluteString], @"url",
+                                  nil ];
+            
+            NSString * s = [dic JSONRepresentation];
+            //const char * data = "{ \"method\": \"dialogCompleteWithUrl\" }";
+            const char * data = [s UTF8String];
+            int size = strlen(data) + 1;
+            
+            [self callCallback:(void*)data size: size];
+            
+            
+        }
+    }
+}
+
+@end
+
+
+
+//----------------------------------------------------------------------------
+
+@implementation FBRequestDelegateImpl
+
+
+-(id) initWithExternalRequest:(rooFacebook_Request*) external{
+    m_external = external;
+    
+    
+    return self;
+}
+
+
+-(void) callCallback:(void*) systemData size:(int) size{
+    s3eEdkCallbacksEnqueue(S3E_EXT_ROOFACEBOOK2_HASH
+                           , e_rooFacebook_request
+                           , systemData
+                           , size
+                           , m_external
+                           , S3E_FALSE
+                           );
+}
+
+
+/**
+ * Called just before the request is sent to the server.
+ */
+- (void)requestLoading:(FBRequest *)request{
+    s3eDebugOutputString("requestLoading");
+    const char * data = "{ \"method\": \"requestLoading\" }";
+    int size = strlen(data) + 1;
+    [self callCallback:(void*)data size: size];
+}
+
+/**
+ * Called when the server responds and begins to send back data.
+ */
+- (void)request:(FBRequest *)request didReceiveResponse:(NSURLResponse *)response{
+    s3eDebugOutputString("request didReceiveResponse");
+    const char * data = "{ \"method\": \"request didReceiveResponse\" }";
+    int size = strlen(data) + 1;
+    [self callCallback:(void*)data size: size];
+}
+
+/**
+ * Called when an error prevents the request from completing successfully.
+ */
+- (void)request:(FBRequest *)request didFailWithError:(NSError *)error{
+    s3eDebugOutputString("request didFailWithError");
+    if(m_external){
+        s3eDebugOutputString("m_external");
+        s3eDebugOutputString("callback");
+        //m_external->callback(0, "{ \"method\": \"dialogCompleteWithUrl\" }", m_external->userData);
+        
+        NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                              @"didFailWithError", @"method",
+                              [error code], @"code",
+                              [error domain], @"domain",
+                              [error userInfo], @"userInfo",
+                              [error localizedDescription], @"localizedDescription",
+                              [error localizedRecoveryOptions], @"localizedRecoveryOptions",
+                              [error localizedRecoverySuggestion], @"localizedRecoverySuggestion",
+                              [error localizedFailureReason], @"localizedFailureReason",
+                              nil ];
+        
+        NSString * s = [dic JSONRepresentation];
+        //const char * data = "{ \"method\": \"dialogCompleteWithUrl\" }";
+        const char * data = [s UTF8String];
+        int size = strlen(data) + 1;
+        
+        [self callCallback:(void*)data size: size];
+        
+        
+    }
+}
+
+/**
+ * Called when a request returns and its response has been parsed into
+ * an object.
+ *
+ * The resulting object may be a dictionary, an array, a string, or a number,
+ * depending on thee format of the API response.
+ */
+- (void)request:(FBRequest *)request didLoad:(id)result{
+    
+}
+
+/**
+ * Called when a request returns a response.
+ *
+ * The result object is the raw response from the server of type NSData
+ */
+- (void)request:(FBRequest *)request didLoadRawResponse:(NSData *)data{
+    s3eDebugOutputString("request didLoadRawResponse");
+    const void * b = [data bytes];
+    int size = [data length];
+    const char * text = (const char *)b;
+    s3eDebugOutputString(text);
+    char buf[100];
+    snprintf(buf, sizeof(buf), "length: %d", size);
+    s3eDebugOutputString(buf);
+    [self callCallback:(void*)b size: size];
+}
+@end
+
+
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s3eResult rooFacebook2Init_platform()
+{
+    s3eDebugOutputString("rooFacebook2Init_platform");
+    // Add any platform-specific initialisation code here
+    return S3E_RESULT_SUCCESS;
+}
+
+void rooFacebook2Terminate_platform()
+{
+    s3eDebugOutputString("rooFacebook2Terminate_platform");
+    // Add any platform-specific termination code here
+}
+
+int32 rooFacebook_handleOpenURL(void* systemData, void* userData)
+{
+    s3eDebugOutputString("rooFacebook_handleOpenURL");
+    
+    NSURL * url = (NSURL *) systemData;
+    rooFacebook_Session * external = (rooFacebook_Session *) userData;
+    
+    [external->delegate handleOpenURL:url];
+    
+    return 0;
+}
+
+
+rooFacebook_Session * rooFacebook_init_platform(const char* appId, rooFacebook_CallbackSpecific callback, void * userData)
+{
+    s3eDebugOutputString("rooFacebook_init_platform");
+    NSString *nsAppId = [NSString stringWithUTF8String:appId];
+    rooFacebook_Session * external = new rooFacebook_Session;
+    external->delegate = [[FBSessionDelegateImpl alloc] initWithExternal:external];
+    external->delegate->facebook = external->facebook = [[Facebook alloc] initWithAppId:nsAppId andDelegate:external->delegate];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    s3eDebugOutputString("checking defaults");
+    if ([defaults objectForKey:@"FBAccessTokenKey"]
+        && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        s3eDebugOutputString("defaults exist");
+        external->facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
+        external->facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+        s3eDebugOutputString([external->facebook.accessToken UTF8String]);
+        s3eDebugOutputString([[external->facebook.expirationDate description] UTF8String]);
+    }
+    
+    
+    s3eEdkCallbacksRegisterSpecific (S3E_EXT_ROOFACEBOOK2_HASH
+                                     , e_rooFacebook_MAX
+                                     , e_rooFacebook_session
+                                     , callback
+                                     , userData
+                                     , S3E_FALSE
+                                     , external);
+    
+    
+    
+    
+    s3eEdkCallbacksRegisterInternal(
+                                    S3E_EDK_INTERNAL,
+                                    S3E_EDK_CALLBACK_MAX,
+                                    S3E_EDK_IPHONE_HANDLEOPENURL,
+                                    rooFacebook_handleOpenURL,
+                                    external,
+                                    false
+                                    );
+    
+    return external;
+}
+
+rooFacebook_Session * rooFacebook_initWithUrlSchemeSuffix_platform(const char* appId, const char * urlSchemeSuffix, rooFacebook_CallbackSpecific callback, void * userData)
+{
+}
+
+void rooFacebook_authorize_platform(rooFacebook_Session * facebook, const char * permissions)
+{
+    s3eDebugOutputString("rooFacebook_authorize_platform");
+    if(facebook){
+        s3eDebugOutputString("facebook exists");
+    }
+    
+    
+    if(facebook->facebook){
+        s3eDebugOutputString("facebook->facebook exists");
+    }else{
+        s3eDebugOutputString("facebook->facebook nil");
+    }
+    
+    if(facebook->facebook.accessToken != nil){
+        s3eDebugOutputString("accessToken != nil");
+    }else{
+        s3eDebugOutputString("accessToken == nil");
+    }
+    if(facebook->facebook.expirationDate != nil){
+        s3eDebugOutputString("expirationDate != nil");
+    }else{
+        s3eDebugOutputString("expirationDate == nil");
+    }
+    if(NSOrderedDescending == [facebook->facebook.expirationDate compare:[NSDate date]]){
+        s3eDebugOutputString("NSOrderedDescending ==");
+    }else{
+        s3eDebugOutputString("NSOrderedDescending !=");
+    }
+    
+    
+    
+    //if (![facebook->facebook isSessionValid]) 
+    {
+        s3eDebugOutputString("isSessionValid  !!!");
+        //[facebook->facebook authorize:nil delegate:facebook->delegate];
+        //[facebook->facebook authorize:nil delegate:facebook->delegate];
+        
+        s3eDebugOutputString(permissions);
+        //SBJSON * parser = [[SBJSON new] autorelease];
+        SBJSON * parser = [SBJSON new];
+        //NSStream * json = [[NSString stringWithUTF8String:permissions] autorelease];
+        NSStream * json = [NSString stringWithUTF8String:permissions];
+        id result = [parser objectWithString:json error:nil];      
+        
+        NSArray * arr = nil;
+        
+        if([result isKindOfClass:[NSArray class]]){
+            s3eDebugOutputString("is NSArray");
+            arr = result;
+        }else{
+            s3eDebugOutputString("NOT NS Array");
+        }
+        
+        
+        
+        char buf[100];
+        snprintf(buf, sizeof(buf), "size: %d", [arr count]);
+        s3eDebugOutputString(buf);
+        
+        
+        for(NSString * s in arr){
+            s3eDebugOutputString([s UTF8String]);
+        }
+        
+        [facebook->facebook authorize:arr];
+        
+        s3eDebugOutputString("authorized");
+    }
+    //    else{s3eDebugOutputString("NOT isSessionValid");}
+    
+    s3eDebugOutputString("end");
+    /*
+     
+     
+     NSArray *permissions = [[NSArray alloc] initWithObjects:
+     @"user_likes", 
+     @"read_stream",
+     nil];
+     [facebook authorize:permissions];
+     [permissions release];
+     
+     */
+}
+
+void rooFacebook_extendAccessTokenIfNeeded_platform(rooFacebook_Session * facebook)
+{
+    [facebook->facebook extendAccessTokenIfNeeded];  
+}
+
+void rooFacebook_logout_platform(rooFacebook_Session * facebook)
+{
+    [facebook->facebook logout];
+}
+
+void rooFacebook_deleteSession_platform(rooFacebook_Session * facebook)
+{
+    [facebook->facebook release];
+    delete facebook;
+}
+
+int rooFacebook_isSessionValid_platform(rooFacebook_Session * facebook)
+{
+    return [facebook->facebook isSessionValid];
+}
+
+rooFacebook_Dialog * rooFacebook_dialog_platform(rooFacebook_Session * facebook, const char * action, rooFacebook_CallbackSpecific callback, void * userData)
+{
+    rooFacebook_Dialog * dialog = new rooFacebook_Dialog;
+    dialog->userData = userData;
+    dialog->callback = callback;
+    dialog->delegate = [[FBDialogDelegateImpl alloc] initWithExternalDialog:dialog];
+    
+    s3eEdkCallbacksRegisterSpecific (S3E_EXT_ROOFACEBOOK2_HASH
+                                     , e_rooFacebook_MAX
+                                     , e_rooFacebook_dialog
+                                     , callback
+                                     , userData
+                                     , S3E_FALSE
+                                     , dialog);
+    
+    
+    NSString * nsaction = [NSString stringWithUTF8String:action];
+    [facebook->facebook dialog:nsaction andDelegate:dialog->delegate];
+    return dialog;
+}
+
+rooFacebook_Dialog * rooFacebook_dialogAndParams_platform(rooFacebook_Session * facebook, const char * action, const char * params, rooFacebook_CallbackSpecific callback, void * userData)
+{
+    
+    
+    SBJSON * parser = [SBJSON new];
+    //NSStream * json = [[NSString stringWithUTF8String:permissions] autorelease];
+    NSStream * json = [NSString stringWithUTF8String:params];
+    id result = [parser objectWithString:json error:nil];      
+    
+    NSArray * arr = nil;
+    
+    if([result isKindOfClass:[NSArray class]]){
+        s3eDebugOutputString("is NSArray");
+        arr = result;
+    }else{
+        s3eDebugOutputString("NOT NS Array");
+    }
+    
+    
+    NSDictionary * dic = nil;
+    
+    if([result isKindOfClass:[NSDictionary class]]){
+        s3eDebugOutputString("is NSDictionary");
+        dic = result;
+    }else{
+        s3eDebugOutputString("NOT NS dic");
+    }
+    
+    
+    
+    char buf[100];
+    snprintf(buf, sizeof(buf), "size: %d", [dic count]);
+    s3eDebugOutputString(buf);
+    
+    
+    for(NSString * s in dic){
+        s3eDebugOutputString([s UTF8String]);
+    }
+    NSMutableDictionary * mdic = [[NSMutableDictionary alloc] initWithDictionary:dic];
+    
+    
+    
+    rooFacebook_Dialog * dialog = new rooFacebook_Dialog;
+    dialog->userData = userData;
+    dialog->callback = callback;
+    dialog->delegate = [[FBDialogDelegateImpl alloc] initWithExternalDialog:dialog];
+    
+    
+    s3eEdkCallbacksRegisterSpecific (S3E_EXT_ROOFACEBOOK2_HASH
+                                     , e_rooFacebook_MAX
+                                     , e_rooFacebook_dialog
+                                     , callback
+                                     , userData
+                                     , S3E_FALSE
+                                     , dialog);    
+    
+    NSString * nsaction = [NSString stringWithUTF8String:action];
+    //[facebook->facebook dialog:nsaction andDelegate:dialog->delegate];
+    [facebook->facebook dialog:nsaction andParams:mdic andDelegate:dialog->delegate];
+    return dialog;
+}
+
+void rooFacebook_deleteDialog_platform(rooFacebook_Dialog * dialog)
+{
+    [dialog->delegate release];
+    delete dialog;
+}
+
+rooFacebook_Request * rooFacebook_requestWithParams_platform(rooFacebook_Session * facebook, const char * params, rooFacebook_CallbackSpecific callback, void * userData)
+{
+    SBJSON * parser = [SBJSON new];
+    NSStream * json = [NSString stringWithUTF8String:params];
+    id result = [parser objectWithString:json error:nil];      
+    NSDictionary * dic = nil;
+    if([result isKindOfClass:[NSDictionary class]]){
+        s3eDebugOutputString("is NSDictionary");
+        dic = result;
+    }else{
+        s3eDebugOutputString("NOT NS dic");
+    }
+    NSMutableDictionary * mdic = [NSMutableDictionary initWithDictionary:dic];
+
+
+    rooFacebook_Request * request = new rooFacebook_Request;
+    request->delegate = [[FBRequestDelegateImpl alloc] initWithExternalRequest:request];
+    
+    s3eEdkCallbacksRegisterSpecific (S3E_EXT_ROOFACEBOOK2_HASH
+                                     , e_rooFacebook_MAX
+                                     , e_rooFacebook_request
+                                     , callback
+                                     , userData
+                                     , S3E_FALSE
+                                     , request);
+    
+    [facebook->facebook requestWithParams:mdic andDelegate:request->delegate];
+}
+
+rooFacebook_Request * rooFacebook_requestWithMethodName_platform(rooFacebook_Session * facebook, const char * methodName, const char * params, const char * httpMethod, rooFacebook_CallbackSpecific callback, void * userData)
+{
+
+    SBJSON * parser = [SBJSON new];
+    NSStream * json = [NSString stringWithUTF8String:params];
+    id result = [parser objectWithString:json error:nil];      
+    NSDictionary * dic = nil;
+    if([result isKindOfClass:[NSDictionary class]]){
+        s3eDebugOutputString("is NSDictionary");
+        dic = result;
+    }else{
+        s3eDebugOutputString("NOT NS dic");
+    }
+    NSMutableDictionary * mdic = [NSMutableDictionary initWithDictionary:dic];
+    
+    
+    rooFacebook_Request * request = new rooFacebook_Request;
+    request->delegate = [[FBRequestDelegateImpl alloc] initWithExternalRequest:request];
+    
+    s3eEdkCallbacksRegisterSpecific (S3E_EXT_ROOFACEBOOK2_HASH
+                                     , e_rooFacebook_MAX
+                                     , e_rooFacebook_request
+                                     , callback
+                                     , userData
+                                     , S3E_FALSE
+                                     , request);
+    
+    NSString * nsmethodName = [NSString stringWithUTF8String:methodName];
+    //NSString * nsparams = [NSString stringWithUTF8String:params];
+    NSString * nshttpdMethod = [NSString stringWithUTF8String:httpMethod];
+    
+    [facebook->facebook requestWithMethodName:nsmethodName andParams:mdic andHttpMethod:nshttpdMethod andDelegate:request->delegate];
+
+}
+
+rooFacebook_Request * rooFacebook_requestWithGraphPath_platform(rooFacebook_Session * facebook, const char * graphPath, rooFacebook_CallbackSpecific callback, void * userData)
+{
+    rooFacebook_Request * request = new rooFacebook_Request;
+    request->delegate = [[FBRequestDelegateImpl alloc] initWithExternalRequest:request];
+    
+    s3eEdkCallbacksRegisterSpecific (S3E_EXT_ROOFACEBOOK2_HASH
+                                     , e_rooFacebook_MAX
+                                     , e_rooFacebook_request
+                                     , callback
+                                     , userData
+                                     , S3E_FALSE
+                                     , request);
+    
+    NSString * nsgraphPath = [NSString stringWithUTF8String:graphPath];
+    
+    [facebook->facebook requestWithGraphPath:nsgraphPath andDelegate:request->delegate];
+    
+}
+
+rooFacebook_Request * rooFacebook_requestWithGraphPathAndParams_platform(rooFacebook_Session * facebook, const char * graphPath, const char * params, rooFacebook_CallbackSpecific callback, void * userData)
+{
+    
+    SBJSON * parser = [SBJSON new];
+    NSStream * json = [NSString stringWithUTF8String:params];
+    id result = [parser objectWithString:json error:nil];      
+    NSDictionary * dic = nil;
+    if([result isKindOfClass:[NSDictionary class]]){
+        s3eDebugOutputString("is NSDictionary");
+        dic = result;
+    }else{
+        s3eDebugOutputString("NOT NS dic");
+    }
+    NSMutableDictionary * mdic = [NSMutableDictionary initWithDictionary:dic];
+    
+    rooFacebook_Request * request = new rooFacebook_Request;
+    request->delegate = [[FBRequestDelegateImpl alloc] initWithExternalRequest:request];
+    
+    s3eEdkCallbacksRegisterSpecific (S3E_EXT_ROOFACEBOOK2_HASH
+                                     , e_rooFacebook_MAX
+                                     , e_rooFacebook_request
+                                     , callback
+                                     , userData
+                                     , S3E_FALSE
+                                     , request);
+    
+    NSString * nsgraphPath = [NSString stringWithUTF8String:graphPath];
+    
+    [facebook->facebook requestWithGraphPath:nsgraphPath andParams:mdic andDelegate:request->delegate];
+}
+
+rooFacebook_Request * rooFacebook_requestWithGraphPathAndParamsAndHttpMethod_platform(rooFacebook_Session * facebook, const char * graphPath, const char * params, const char * httpMethod, rooFacebook_CallbackSpecific callback, void * userData)
+{
+    
+    SBJSON * parser = [SBJSON new];
+    NSStream * json = [NSString stringWithUTF8String:params];
+    id result = [parser objectWithString:json error:nil];      
+    NSDictionary * dic = nil;
+    if([result isKindOfClass:[NSDictionary class]]){
+        s3eDebugOutputString("is NSDictionary");
+        dic = result;
+    }else{
+        s3eDebugOutputString("NOT NS dic");
+    }
+    NSMutableDictionary * mdic = [[NSMutableDictionary alloc] initWithDictionary:dic];
+    
+    rooFacebook_Request * request = new rooFacebook_Request;
+    request->delegate = [[FBRequestDelegateImpl alloc] initWithExternalRequest:request];
+    
+    s3eEdkCallbacksRegisterSpecific (S3E_EXT_ROOFACEBOOK2_HASH
+                                     , e_rooFacebook_MAX
+                                     , e_rooFacebook_request
+                                     , callback
+                                     , userData
+                                     , S3E_FALSE
+                                     , request);
+    
+    NSString * nsgraphPath = [NSString stringWithUTF8String:graphPath];
+    NSString * nshttpdMethod = [NSString stringWithUTF8String:httpMethod];
+    
+    [facebook->facebook requestWithGraphPath:nsgraphPath andParams:mdic andHttpMethod:nshttpdMethod andDelegate:request->delegate];
+    [mdic release];
+}
+
+void rooFacebook_deleteRequest_platform(rooFacebook_Request * request)
+{
+    [request->delegate release];
+    delete request;
+}

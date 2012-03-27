@@ -1,0 +1,1106 @@
+Archive member included because of file (symbol)
+
+C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                              debug\rooFacebook2_platform.os (IwDebugTraceSetTraceChannel)
+C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+                              debug\rooFacebook2_platform.os (s3eEdkThreadRunOnOS)
+c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+                              C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o) (__aeabi_ldivmod)
+c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+                              c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o) (__gnu_ldivmod_helper)
+c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+                              C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o) (__aeabi_unwind_cpp_pr0)
+c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+                              c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o) (restore_core_regs)
+c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+                              c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o) (__gnu_unwind_execute)
+c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+                              c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o) (__divdi3)
+c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+                              c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o) (__udivdi3)
+c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+                              c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o) (__aeabi_uidiv)
+c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)
+                              c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o) (__div0)
+
+Discarded input sections
+
+ _ZN7_JNIEnv9FindClassEPKc
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv17ExceptionOccurredEv
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv17ExceptionDescribeEv
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv14ExceptionClearEv
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv12NewGlobalRefEP8_jobject
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv15DeleteGlobalRefEP8_jobject
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv14DeleteLocalRefEP8_jobject
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv12IsSameObjectEP8_jobjectS1_
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv16CallObjectMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv14CallLongMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv12NewStringUTFEPKc
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv17GetStringUTFCharsEP8_jstringPh
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv21ReleaseStringUTFCharsEP8_jstringPKc
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JNIEnv15RegisterNativesEP7_jclassPK15JNINativeMethodi
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ _ZN7_JavaVM6GetEnvEPPvi
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ .text          0x00000000        0x0 debug\rooFacebook2_platform.os
+ .data          0x00000000        0x0 debug\rooFacebook2_platform.os
+ .note.GNU-stack
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ .text          0x00000000        0x0 debug\rooFacebook2.os
+ .data          0x00000000        0x0 debug\rooFacebook2.os
+ .bss           0x00000000        0x0 debug\rooFacebook2.os
+ .note.GNU-stack
+                0x00000000        0x0 debug\rooFacebook2.os
+ .text          0x00000000        0x0 debug\rooFacebook2_register.os
+ .data          0x00000000        0x0 debug\rooFacebook2_register.os
+ .bss           0x00000000        0x0 debug\rooFacebook2_register.os
+ .note.GNU-stack
+                0x00000000        0x0 debug\rooFacebook2_register.os
+ .text          0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .data          0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .text.IwAssertRegisterTextCallback
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwAssertRegisterTextCallback
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwAssertRegisterTextCallback
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .text.IwAssertRegisterCallback
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwAssertRegisterCallback
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwAssertRegisterCallback
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceSetTraceChannel
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .text.IwDebugErrorRegisterCallback
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugErrorRegisterCallback
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugErrorRegisterCallback
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertSetUID
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text._GLOBAL__I_g_DebugGlobals
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .text.IwDebugClearConfigCache
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugClearConfigCache
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugClearConfigCache
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .text.IwDebugErrorShow
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugErrorShow
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugErrorShow
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceIsChannelOn
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertIsChannelOn
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .text.IwDebugTraceDisable
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceDisable
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceDisable
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertShow
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .text.IwDebugTraceChannelSwitch
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceChannelSwitch
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceChannelSwitch
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .note.GNU-stack
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .text          0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .data          0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .bss           0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .text.s3eEdkThreadRunOnOSAsync
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.extab.text.s3eEdkThreadRunOnOSAsync
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.exidx.text.s3eEdkThreadRunOnOSAsync
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .text.s3eEdkErrorSetString
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.extab.text.s3eEdkErrorSetString
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.exidx.text.s3eEdkErrorSetString
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .note.GNU-stack
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .data          0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+ .data          0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .bss           0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .ARM.extab     0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .data          0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .bss           0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .data          0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+ .bss           0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+ .data          0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .bss           0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .ARM.extab     0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .data          0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .bss           0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .ARM.extab     0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .data          0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .bss           0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .ARM.extab     0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .data          0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)
+ .bss           0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD debug\rooFacebook2_platform.os
+LOAD debug\rooFacebook2.os
+LOAD debug\rooFacebook2_register.os
+LOAD C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a
+LOAD C:\soft\Marmalade\5.2\s3e\edk\lib\android/libplaceholderplaceholderplaceholderplaceholderplaceholder.so
+LOAD C:\soft\Android\android-ndk-r7b\platforms\android-9\arch-arm\usr\lib/libc.so
+LOAD C:\soft\Android\android-ndk-r7b\platforms\android-9\arch-arm\usr\lib/libm.so
+LOAD C:\soft\Android\android-ndk-r7b\platforms\android-9\arch-arm\usr\lib/liblog.so
+LOAD C:\soft\Android\android-ndk-r7b\platforms\android-9\arch-arm\usr\lib/libstdc++.so
+LOAD c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a
+                0x000000d4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000d4      0x2a0
+ *(.hash)
+ .hash          0x000000d4      0x2a0 debug\rooFacebook2_platform.os
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000374      0x630
+ *(.dynsym)
+ .dynsym        0x00000374      0x630 debug\rooFacebook2_platform.os
+
+.dynstr         0x000009a4      0x65c
+ *(.dynstr)
+ .dynstr        0x000009a4      0x65c debug\rooFacebook2_platform.os
+
+.gnu.version    0x00001000        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 debug\rooFacebook2_platform.os
+
+.gnu.version_d  0x00001000        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+
+.gnu.version_r  0x00001000        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+
+.rel.dyn        0x00001000      0x238
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text.IwAssertRegisterTextCallback
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ .rel.text.IwAssertRegisterCallback
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugTraceSetTraceChannel
+                0x00001000        0x8 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugErrorRegisterCallback
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugAssertSetUID
+                0x00001008        0x8 debug\rooFacebook2_platform.os
+ .rel.text._GLOBAL__I_g_DebugGlobals
+                0x00001010        0x8 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugClearConfigCache
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugErrorShow
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugTraceLineVPrintf
+                0x00001018       0x20 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugTraceIsChannelOn
+                0x00001038       0x18 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugAssertIsChannelOn
+                0x00001050       0x10 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugAssertSetMessage
+                0x00001060       0x20 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugAssertSetSolution
+                0x00001080       0x18 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugAssertShow
+                0x00001098       0x48 debug\rooFacebook2_platform.os
+ .rel.text.IwDebugTraceChannelSwitch
+                0x00000000        0x0 debug\rooFacebook2_platform.os
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ .rel.data.rel.ro
+                0x000010e0       0x60 debug\rooFacebook2_platform.os
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00001140       0xf0 debug\rooFacebook2_platform.os
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.init_array
+                0x00001230        0x8 debug\rooFacebook2_platform.os
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.plt        0x00001238       0xe8
+ *(.rel.plt)
+ .rel.plt       0x00001238       0xe8 debug\rooFacebook2_platform.os
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(.init)
+
+.plt            0x00001320      0x170
+ *(.plt)
+ .plt           0x00001320      0x170 debug\rooFacebook2_platform.os
+
+.text           0x00001490     0x67d4
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text._ZN7_JNIEnv9FindClassEPKc
+                0x00001490       0x40 debug\rooFacebook2_platform.os
+                0x00001490                _JNIEnv::FindClass(char const*)
+ .text._ZN7_JNIEnv17ExceptionOccurredEv
+                0x000014d0       0x38 debug\rooFacebook2_platform.os
+                0x000014d0                _JNIEnv::ExceptionOccurred()
+ .text._ZN7_JNIEnv17ExceptionDescribeEv
+                0x00001508       0x30 debug\rooFacebook2_platform.os
+                0x00001508                _JNIEnv::ExceptionDescribe()
+ .text._ZN7_JNIEnv14ExceptionClearEv
+                0x00001538       0x30 debug\rooFacebook2_platform.os
+                0x00001538                _JNIEnv::ExceptionClear()
+ .text._ZN7_JNIEnv12NewGlobalRefEP8_jobject
+                0x00001568       0x40 debug\rooFacebook2_platform.os
+                0x00001568                _JNIEnv::NewGlobalRef(_jobject*)
+ .text._ZN7_JNIEnv15DeleteGlobalRefEP8_jobject
+                0x000015a8       0x38 debug\rooFacebook2_platform.os
+                0x000015a8                _JNIEnv::DeleteGlobalRef(_jobject*)
+ .text._ZN7_JNIEnv14DeleteLocalRefEP8_jobject
+                0x000015e0       0x38 debug\rooFacebook2_platform.os
+                0x000015e0                _JNIEnv::DeleteLocalRef(_jobject*)
+ .text._ZN7_JNIEnv12IsSameObjectEP8_jobjectS1_
+                0x00001618       0x48 debug\rooFacebook2_platform.os
+                0x00001618                _JNIEnv::IsSameObject(_jobject*, _jobject*)
+ .text._ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+                0x00001660       0x60 debug\rooFacebook2_platform.os
+                0x00001660                _JNIEnv::NewObject(_jclass*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
+                0x000016c0       0x50 debug\rooFacebook2_platform.os
+                0x000016c0                _JNIEnv::GetMethodID(_jclass*, char const*, char const*)
+ .text._ZN7_JNIEnv16CallObjectMethodEP8_jobjectP10_jmethodIDz
+                0x00001710       0x60 debug\rooFacebook2_platform.os
+                0x00001710                _JNIEnv::CallObjectMethod(_jobject*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
+                0x00001770       0x60 debug\rooFacebook2_platform.os
+                0x00001770                _JNIEnv::CallIntMethod(_jobject*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv14CallLongMethodEP8_jobjectP10_jmethodIDz
+                0x000017d0       0x70 debug\rooFacebook2_platform.os
+                0x000017d0                _JNIEnv::CallLongMethod(_jobject*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
+                0x00001840       0x50 debug\rooFacebook2_platform.os
+                0x00001840                _JNIEnv::CallVoidMethod(_jobject*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv12NewStringUTFEPKc
+                0x00001890       0x40 debug\rooFacebook2_platform.os
+                0x00001890                _JNIEnv::NewStringUTF(char const*)
+ .text._ZN7_JNIEnv17GetStringUTFCharsEP8_jstringPh
+                0x000018d0       0x48 debug\rooFacebook2_platform.os
+                0x000018d0                _JNIEnv::GetStringUTFChars(_jstring*, unsigned char*)
+ .text._ZN7_JNIEnv21ReleaseStringUTFCharsEP8_jstringPKc
+                0x00001918       0x40 debug\rooFacebook2_platform.os
+                0x00001918                _JNIEnv::ReleaseStringUTFChars(_jstring*, char const*)
+ .text._ZN7_JNIEnv15RegisterNativesEP7_jclassPK15JNINativeMethodi
+                0x00001958       0x50 debug\rooFacebook2_platform.os
+                0x00001958                _JNIEnv::RegisterNatives(_jclass*, JNINativeMethod const*, int)
+ .text._ZN7_JavaVM6GetEnvEPPvi
+                0x000019a8       0x48 debug\rooFacebook2_platform.os
+                0x000019a8                _JavaVM::GetEnv(void**, int)
+ .text._ZL15s3eEdkJNIGetEnvv
+                0x000019f0       0x48 debug\rooFacebook2_platform.os
+ .text._ZL27s3eEdkAndroidFindClass_realPKc
+                0x00001a38       0x7c debug\rooFacebook2_platform.os
+ .text._ZL22s3eEdkAndroidFindClassPKc
+                0x00001ab4       0x3c debug\rooFacebook2_platform.os
+ .text._ZL11IwDebugExitv
+                0x00001af0        0x8 debug\rooFacebook2_platform.os
+ .text._Z14getKnownObjectP8_jobject
+                0x00001af8      0x1a8 debug\rooFacebook2_platform.os
+                0x00001af8                getKnownObject(_jobject*)
+ .text._Z14addKnownObjectP8_jobject
+                0x00001ca0      0x24c debug\rooFacebook2_platform.os
+                0x00001ca0                addKnownObject(_jobject*)
+ .text._Z17removeKnownObejctP8_jobject
+                0x00001eec       0xb0 debug\rooFacebook2_platform.os
+                0x00001eec                removeKnownObejct(_jobject*)
+ .text._ZL24rooFacebook_AuthCallbackP7_JNIEnvP8_jobjectS2_P8_jstring
+                0x00001f9c      0x1f4 debug\rooFacebook2_platform.os
+ .text._ZL26rooFacebook_DialogCallbackP7_JNIEnvP8_jobjectS2_P8_jstring
+                0x00002190      0x1f4 debug\rooFacebook2_platform.os
+ .text._Z27rooFacebook_RequestCallbackP7_JNIEnvP8_jobjectS2_P8_jstring
+                0x00002384      0x1f4 debug\rooFacebook2_platform.os
+                0x00002384                rooFacebook_RequestCallback(_JNIEnv*, _jobject*, _jobject*, _jstring*)
+ .text._Z20rooFacebook_DebugLogP7_JNIEnvP8_jobjectP8_jstring
+                0x00002578       0x54 debug\rooFacebook2_platform.os
+                0x00002578                rooFacebook_DebugLog(_JNIEnv*, _jobject*, _jstring*)
+ .text._Z25rooFacebook2Init_platformv
+                0x000025cc      0x9e0 debug\rooFacebook2_platform.os
+                0x000025cc                rooFacebook2Init_platform()
+ .text._Z30rooFacebook2Terminate_platformv
+                0x00002fac       0x20 debug\rooFacebook2_platform.os
+                0x00002fac                rooFacebook2Terminate_platform()
+ .text._Z25rooFacebook_init_platformPKcPFiPvS1_S1_ES1_
+                0x00002fcc       0xe4 debug\rooFacebook2_platform.os
+                0x00002fcc                rooFacebook_init_platform(char const*, int (*)(void*, void*, void*), void*)
+ .text._Z44rooFacebook_initWithUrlSchemeSuffix_platformPKcS0_PFiPvS1_S1_ES1_
+                0x000030b0      0x104 debug\rooFacebook2_platform.os
+                0x000030b0                rooFacebook_initWithUrlSchemeSuffix_platform(char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z30rooFacebook_authorize_platformP19rooFacebook_SessionPKc
+                0x000031b4       0x8c debug\rooFacebook2_platform.os
+                0x000031b4                rooFacebook_authorize_platform(rooFacebook_Session*, char const*)
+ .text._Z35rooFacebook_getAccessToken_platformP19rooFacebook_Session
+                0x00003240       0xf0 debug\rooFacebook2_platform.os
+                0x00003240                rooFacebook_getAccessToken_platform(rooFacebook_Session*)
+ .text._Z37rooFacebook_getAccessExpires_platformP19rooFacebook_Session
+                0x00003330       0x60 debug\rooFacebook2_platform.os
+                0x00003330                rooFacebook_getAccessExpires_platform(rooFacebook_Session*)
+ .text._Z35rooFacebook_setAccessToken_platformP19rooFacebook_SessionPKc
+                0x00003390       0x70 debug\rooFacebook2_platform.os
+                0x00003390                rooFacebook_setAccessToken_platform(rooFacebook_Session*, char const*)
+ .text._Z37rooFacebook_setAccessExpires_platformP19rooFacebook_Sessionx
+                0x00003400       0x68 debug\rooFacebook2_platform.os
+                0x00003400                rooFacebook_setAccessExpires_platform(rooFacebook_Session*, long long)
+ .text._Z38rooFacebook_extendAccessToken_platformP19rooFacebook_Session
+                0x00003468       0x50 debug\rooFacebook2_platform.os
+                0x00003468                rooFacebook_extendAccessToken_platform(rooFacebook_Session*)
+ .text._Z46rooFacebook_extendAccessTokenIfNeeded_platformP19rooFacebook_Session
+                0x000034b8       0x64 debug\rooFacebook2_platform.os
+                0x000034b8                rooFacebook_extendAccessTokenIfNeeded_platform(rooFacebook_Session*)
+ .text._Z27rooFacebook_logout_platformP19rooFacebook_Session
+                0x0000351c       0x64 debug\rooFacebook2_platform.os
+                0x0000351c                rooFacebook_logout_platform(rooFacebook_Session*)
+ .text._Z34rooFacebook_deleteSession_platformP19rooFacebook_Session
+                0x00003580       0x80 debug\rooFacebook2_platform.os
+                0x00003580                rooFacebook_deleteSession_platform(rooFacebook_Session*)
+ .text._Z35rooFacebook_isSessionValid_platformP19rooFacebook_Session
+                0x00003600       0x6c debug\rooFacebook2_platform.os
+                0x00003600                rooFacebook_isSessionValid_platform(rooFacebook_Session*)
+ .text._Z27rooFacebook_dialog_platformP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x0000366c       0xe8 debug\rooFacebook2_platform.os
+                0x0000366c                rooFacebook_dialog_platform(rooFacebook_Session*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z36rooFacebook_dialogAndParams_platformP19rooFacebook_SessionPKcS2_PFiPvS3_S3_ES3_
+                0x00003754      0x104 debug\rooFacebook2_platform.os
+                0x00003754                rooFacebook_dialogAndParams_platform(rooFacebook_Session*, char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z33rooFacebook_deleteDialog_platformP18rooFacebook_Dialog
+                0x00003858       0x80 debug\rooFacebook2_platform.os
+                0x00003858                rooFacebook_deleteDialog_platform(rooFacebook_Dialog*)
+ .text._Z38rooFacebook_requestWithParams_platformP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x000038d8       0xe8 debug\rooFacebook2_platform.os
+                0x000038d8                rooFacebook_requestWithParams_platform(rooFacebook_Session*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z42rooFacebook_requestWithMethodName_platformP19rooFacebook_SessionPKcS2_S2_PFiPvS3_S3_ES3_
+                0x000039c0      0x120 debug\rooFacebook2_platform.os
+                0x000039c0                rooFacebook_requestWithMethodName_platform(rooFacebook_Session*, char const*, char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z41rooFacebook_requestWithGraphPath_platformP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x00003ae0       0xe8 debug\rooFacebook2_platform.os
+                0x00003ae0                rooFacebook_requestWithGraphPath_platform(rooFacebook_Session*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z50rooFacebook_requestWithGraphPathAndParams_platformP19rooFacebook_SessionPKcS2_PFiPvS3_S3_ES3_
+                0x00003bc8      0x104 debug\rooFacebook2_platform.os
+                0x00003bc8                rooFacebook_requestWithGraphPathAndParams_platform(rooFacebook_Session*, char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z63rooFacebook_requestWithGraphPathAndParamsAndHttpMethod_platformP19rooFacebook_SessionPKcS2_S2_PFiPvS3_S3_ES3_
+                0x00003ccc      0x120 debug\rooFacebook2_platform.os
+                0x00003ccc                rooFacebook_requestWithGraphPathAndParamsAndHttpMethod_platform(rooFacebook_Session*, char const*, char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z34rooFacebook_deleteRequest_platformP19rooFacebook_Request
+                0x00003dec       0x80 debug\rooFacebook2_platform.os
+                0x00003dec                rooFacebook_deleteRequest_platform(rooFacebook_Request*)
+ .text._Z16rooFacebook2Initv
+                0x00003e6c       0x18 debug\rooFacebook2.os
+                0x00003e6c                rooFacebook2Init()
+ .text._Z21rooFacebook2Terminatev
+                0x00003e84       0x10 debug\rooFacebook2.os
+                0x00003e84                rooFacebook2Terminate()
+ .text.rooFacebook_init
+                0x00003e94       0x30 debug\rooFacebook2.os
+                0x00003e94                rooFacebook_init
+ .text.rooFacebook_initWithUrlSchemeSuffix
+                0x00003ec4       0x38 debug\rooFacebook2.os
+                0x00003ec4                rooFacebook_initWithUrlSchemeSuffix
+ .text.rooFacebook_authorize
+                0x00003efc       0x28 debug\rooFacebook2.os
+                0x00003efc                rooFacebook_authorize
+ .text.rooFacebook_getAccessToken
+                0x00003f24       0x20 debug\rooFacebook2.os
+                0x00003f24                rooFacebook_getAccessToken
+ .text.rooFacebook_getAccessExpires
+                0x00003f44       0x20 debug\rooFacebook2.os
+                0x00003f44                rooFacebook_getAccessExpires
+ .text.rooFacebook_setAccessToken
+                0x00003f64       0x28 debug\rooFacebook2.os
+                0x00003f64                rooFacebook_setAccessToken
+ .text.rooFacebook_setAccessExpires
+                0x00003f8c       0x28 debug\rooFacebook2.os
+                0x00003f8c                rooFacebook_setAccessExpires
+ .text.rooFacebook_extendAccessToken
+                0x00003fb4       0x20 debug\rooFacebook2.os
+                0x00003fb4                rooFacebook_extendAccessToken
+ .text.rooFacebook_extendAccessTokenIfNeeded
+                0x00003fd4       0x20 debug\rooFacebook2.os
+                0x00003fd4                rooFacebook_extendAccessTokenIfNeeded
+ .text.rooFacebook_logout
+                0x00003ff4       0x20 debug\rooFacebook2.os
+                0x00003ff4                rooFacebook_logout
+ .text.rooFacebook_deleteSession
+                0x00004014       0x20 debug\rooFacebook2.os
+                0x00004014                rooFacebook_deleteSession
+ .text.rooFacebook_isSessionValid
+                0x00004034       0x20 debug\rooFacebook2.os
+                0x00004034                rooFacebook_isSessionValid
+ .text.rooFacebook_dialog
+                0x00004054       0x38 debug\rooFacebook2.os
+                0x00004054                rooFacebook_dialog
+ .text.rooFacebook_dialogAndParams
+                0x0000408c       0x40 debug\rooFacebook2.os
+                0x0000408c                rooFacebook_dialogAndParams
+ .text.rooFacebook_deleteDialog
+                0x000040cc       0x20 debug\rooFacebook2.os
+                0x000040cc                rooFacebook_deleteDialog
+ .text.rooFacebook_requestWithParams
+                0x000040ec       0x38 debug\rooFacebook2.os
+                0x000040ec                rooFacebook_requestWithParams
+ .text.rooFacebook_requestWithMethodName
+                0x00004124       0x48 debug\rooFacebook2.os
+                0x00004124                rooFacebook_requestWithMethodName
+ .text.rooFacebook_requestWithGraphPath
+                0x0000416c       0x38 debug\rooFacebook2.os
+                0x0000416c                rooFacebook_requestWithGraphPath
+ .text.rooFacebook_requestWithGraphPathAndParams
+                0x000041a4       0x40 debug\rooFacebook2.os
+                0x000041a4                rooFacebook_requestWithGraphPathAndParams
+ .text.rooFacebook_requestWithGraphPathAndParamsAndHttpMethod
+                0x000041e4       0x48 debug\rooFacebook2.os
+                0x000041e4                rooFacebook_requestWithGraphPathAndParamsAndHttpMethod
+ .text.rooFacebook_deleteRequest
+                0x0000422c       0x20 debug\rooFacebook2.os
+                0x0000422c                rooFacebook_deleteRequest
+ .text._ZL21rooFacebook_init_wrapPKcPFiPvS1_S1_ES1_
+                0x0000424c       0xb8 debug\rooFacebook2_register.os
+ .text._ZL40rooFacebook_initWithUrlSchemeSuffix_wrapPKcS0_PFiPvS1_S1_ES1_
+                0x00004304       0xc4 debug\rooFacebook2_register.os
+ .text._ZL26rooFacebook_authorize_wrapP19rooFacebook_SessionPKc
+                0x000043c8       0xa4 debug\rooFacebook2_register.os
+ .text._ZL31rooFacebook_getAccessToken_wrapP19rooFacebook_Session
+                0x0000446c       0xa4 debug\rooFacebook2_register.os
+ .text._ZL33rooFacebook_getAccessExpires_wrapP19rooFacebook_Session
+                0x00004510       0xac debug\rooFacebook2_register.os
+ .text._ZL31rooFacebook_setAccessToken_wrapP19rooFacebook_SessionPKc
+                0x000045bc       0xa4 debug\rooFacebook2_register.os
+ .text._ZL33rooFacebook_setAccessExpires_wrapP19rooFacebook_Sessionx
+                0x00004660       0xb4 debug\rooFacebook2_register.os
+ .text._ZL34rooFacebook_extendAccessToken_wrapP19rooFacebook_Session
+                0x00004714       0x9c debug\rooFacebook2_register.os
+ .text._ZL42rooFacebook_extendAccessTokenIfNeeded_wrapP19rooFacebook_Session
+                0x000047b0       0x9c debug\rooFacebook2_register.os
+ .text._ZL23rooFacebook_logout_wrapP19rooFacebook_Session
+                0x0000484c       0x9c debug\rooFacebook2_register.os
+ .text._ZL30rooFacebook_deleteSession_wrapP19rooFacebook_Session
+                0x000048e8       0x9c debug\rooFacebook2_register.os
+ .text._ZL31rooFacebook_isSessionValid_wrapP19rooFacebook_Session
+                0x00004984       0xa4 debug\rooFacebook2_register.os
+ .text._ZL23rooFacebook_dialog_wrapP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x00004a28       0xc4 debug\rooFacebook2_register.os
+ .text._ZL32rooFacebook_dialogAndParams_wrapP19rooFacebook_SessionPKcS2_PFiPvS3_S3_ES3_
+                0x00004aec       0xcc debug\rooFacebook2_register.os
+ .text._ZL29rooFacebook_deleteDialog_wrapP18rooFacebook_Dialog
+                0x00004bb8       0x9c debug\rooFacebook2_register.os
+ .text._ZL34rooFacebook_requestWithParams_wrapP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x00004c54       0xc4 debug\rooFacebook2_register.os
+ .text._ZL38rooFacebook_requestWithMethodName_wrapP19rooFacebook_SessionPKcS2_S2_PFiPvS3_S3_ES3_
+                0x00004d18       0xd4 debug\rooFacebook2_register.os
+ .text._ZL37rooFacebook_requestWithGraphPath_wrapP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x00004dec       0xc4 debug\rooFacebook2_register.os
+ .text._ZL46rooFacebook_requestWithGraphPathAndParams_wrapP19rooFacebook_SessionPKcS2_PFiPvS3_S3_ES3_
+                0x00004eb0       0xcc debug\rooFacebook2_register.os
+ .text._ZL59rooFacebook_requestWithGraphPathAndParamsAndHttpMethod_wrapP19rooFacebook_SessionPKcS2_S2_PFiPvS3_S3_ES3_
+                0x00004f7c       0xd4 debug\rooFacebook2_register.os
+ .text._ZL30rooFacebook_deleteRequest_wrapP19rooFacebook_Request
+                0x00005050       0x9c debug\rooFacebook2_register.os
+ .text._Z23rooFacebook2RegisterExtv
+                0x000050ec      0x1d8 debug\rooFacebook2_register.os
+                0x000050ec                rooFacebook2RegisterExt()
+ .text.RegisterExt
+                0x000052c4       0x10 debug\rooFacebook2_register.os
+                0x000052c4                RegisterExt
+ .text.IwDebugTraceSetTraceChannel
+                0x000052d4       0x18 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x000052d4                IwDebugTraceSetTraceChannel
+ .text.IwDebugAssertSetUID
+                0x000052ec       0x10 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x000052ec                IwDebugAssertSetUID
+ .text._GLOBAL__I_g_DebugGlobals
+                0x000052fc       0x8c C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .text.IwDebugTraceLineVPrintf
+                0x00005388       0xe8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x00005388                IwDebugTraceLineVPrintf
+ .text.IwDebugTraceLinePrintf
+                0x00005470       0x30 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x00005470                IwDebugTraceLinePrintf
+ .text.IwDebugTraceIsChannelOn
+                0x000054a0      0x278 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x000054a0                IwDebugTraceIsChannelOn
+ .text.IwDebugAssertIsChannelOn
+                0x00005718      0x1d0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x00005718                IwDebugAssertIsChannelOn
+ .text.IwDebugAssertSetMessage
+                0x000058e8       0xe4 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x000058e8                IwDebugAssertSetMessage
+ .text.IwDebugAssertSetSolution
+                0x000059cc       0x90 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x000059cc                IwDebugAssertSetSolution
+ .text.IwDebugAssertShow
+                0x00005a5c      0x2e8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x00005a5c                IwDebugAssertShow
+ .text.s3eEdkThreadRunOnOS
+                0x00005d44       0x30 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+                0x00005d44                s3eEdkThreadRunOnOS
+ .text          0x00005d74       0x1c c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+                0x00005d74                __aeabi_ldivmod
+ .text          0x00005d90       0x88 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+                0x00005d90                __gnu_uldivmod_helper
+                0x00005dd4                __gnu_ldivmod_helper
+ .text          0x00005e18      0xec4 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+                0x00006840                __gnu_Unwind_RaiseException
+                0x00006398                __aeabi_unwind_cpp_pr0
+                0x00005ec8                _Unwind_GetCFA
+                0x00005e64                _Unwind_VRS_Set
+                0x000065dc                __gnu_Unwind_Backtrace
+                0x00006970                _Unwind_VRS_Pop
+                0x00006388                __aeabi_unwind_cpp_pr2
+                0x00005ed4                _Unwind_DeleteException
+                0x00005ed0                _Unwind_Complete
+                0x00006904                __gnu_Unwind_Resume
+                0x000067cc                __gnu_Unwind_ForcedUnwind
+                0x000068e4                __gnu_Unwind_Resume_or_Rethrow
+                0x00005e18                _Unwind_VRS_Get
+                0x00006390                __aeabi_unwind_cpp_pr1
+ .text          0x00006cdc      0x1a8 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+                0x00006e3c                ___Unwind_ForcedUnwind
+                0x00006cf8                __gnu_Unwind_Save_VFP
+                0x00006e18                _Unwind_Resume_or_Rethrow
+                0x00006e18                ___Unwind_Resume_or_Rethrow
+                0x00006e60                _Unwind_Backtrace
+                0x00006cdc                __restore_core_regs
+                0x00006d18                __gnu_Unwind_Save_VFP_D_16_to_31
+                0x00006d08                __gnu_Unwind_Save_VFP_D
+                0x00006e60                ___Unwind_Backtrace
+                0x00006dd0                ___Unwind_RaiseException
+                0x00006df4                ___Unwind_Resume
+                0x00006d20                __gnu_Unwind_Restore_WMMXD
+                0x00006cf0                __gnu_Unwind_Restore_VFP
+                0x00006df4                _Unwind_Resume
+                0x00006d00                __gnu_Unwind_Restore_VFP_D
+                0x00006d10                __gnu_Unwind_Restore_VFP_D_16_to_31
+                0x00006dd0                _Unwind_RaiseException
+                0x00006cdc                restore_core_regs
+                0x00006dbc                __gnu_Unwind_Save_WMMXC
+                0x00006da8                __gnu_Unwind_Restore_WMMXC
+                0x00006e3c                _Unwind_ForcedUnwind
+                0x00006d64                __gnu_Unwind_Save_WMMXD
+ .text          0x00006e84      0x484 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+                0x00006f24                _Unwind_GetRegionStart
+                0x00006f50                __gnu_unwind_execute
+                0x00006edc                _Unwind_GetTextRelBase
+                0x00006eec                _Unwind_GetLanguageSpecificData
+                0x000072c8                __gnu_unwind_frame
+                0x00006ee4                _Unwind_GetDataRelBase
+ .text          0x00007308      0x47c c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+                0x00007308                __divdi3
+ .text          0x00007784      0x40c c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+                0x00007784                __udivdi3
+ .text          0x00007b90       0xc4 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+                0x00007b90                __udivsi3
+                0x00007b90                __aeabi_uidiv
+                0x00007c3c                __aeabi_uidivmod
+ .text          0x00007c54       0x10 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)
+                0x00007c54                __div0
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini
+ *(.fini)
+                0x00007c64                PROVIDE (__etext, .)
+                0x00007c64                PROVIDE (_etext, .)
+                0x00007c64                PROVIDE (etext, .)
+
+.rodata         0x00007c64     0x1090
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00007c64      0x954 debug\rooFacebook2_platform.os
+ .rodata        0x000085b8      0x620 debug\rooFacebook2_register.os
+ .rodata.str1.4
+                0x00008bd8      0x11c C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                                0x120 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab      0x00008cf4       0x60
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab.text.IwDebugTraceLineVPrintf
+                0x00008cf4        0xc C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugTraceLinePrintf
+                0x00008d00        0xc C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertSetMessage
+                0x00008d0c        0xc C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.IwDebugAssertSetSolution
+                0x00008d18        0xc C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.extab.text.s3eEdkThreadRunOnOS
+                0x00008d24        0xc C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.extab     0x00008d30       0x24 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+                0x00008d54                __exidx_start = .
+
+.ARM.exidx      0x00008d54      0x150
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx.text.IwDebugTraceSetTraceChannel
+                0x00008d54        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertSetUID
+                0x00008d5c        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text._GLOBAL__I_g_DebugGlobals
+                0x00008d64        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceLineVPrintf
+                0x00008d6c        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceLinePrintf
+                0x00008d74        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugTraceIsChannelOn
+                0x00008d7c        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertIsChannelOn
+                0x00008d84        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertSetMessage
+                0x00008d8c        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertSetSolution
+                0x00008d94        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.IwDebugAssertShow
+                0x00008d9c        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.exidx.text.s3eEdkThreadRunOnOS
+                0x00008da4        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.exidx     0x00008dac       0x10 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .ARM.exidx     0x00008dbc       0xa0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .ARM.exidx     0x00008e5c       0x38 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .ARM.exidx     0x00008e94        0x8 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x00008e9c        0x8 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+                0x00008ea4                __exidx_end = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x00008ea4                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00009000                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array     0x00009000        0x4
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00009000        0x4 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+
+.fini_array
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x00009004       0x30
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x00009004       0x30 debug\rooFacebook2_platform.os
+
+.dynamic        0x00009034       0xc0
+ *(.dynamic)
+ .dynamic       0x00009034       0xc0 debug\rooFacebook2_platform.os
+                0x00009034                _DYNAMIC
+                0x000090f4                . = (. DATA_SEGMENT_RELRO_END 0x0)
+
+.got            0x000090f4       0xf8
+ *(.got.plt)
+ .got.plt       0x000090f4       0x80 debug\rooFacebook2_platform.os
+                0x000090f4                _GLOBAL_OFFSET_TABLE_
+ *(.got)
+ .got           0x00009174       0x78 debug\rooFacebook2_platform.os
+
+.data           0x000091ec        0x0
+                0x000091ec                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                0x000091ec                _edata = .
+                0x000091ec                PROVIDE (edata, .)
+                0x000091ec                __bss_start = .
+                0x000091ec                __bss_start__ = .
+
+.bss            0x000091ec     0x1b88
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 debug\rooFacebook2_platform.os
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000091ec      0x160 debug\rooFacebook2_platform.os
+                0x000091ec                g_Str
+ .bss           0x0000934c     0x1a28 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+                0x0000934c                g_DebugGlobals
+ *(COMMON)
+                0x0000ad74                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000ad74                _bss_end__ = .
+                0x0000ad74                __bss_end__ = .
+                0x0000ad74                . = ALIGN (0x4)
+                0x0000ad74                . = ALIGN (0x4)
+                0x0000ad74                __end__ = .
+                0x0000ad74                _end = .
+                0x0000ad74                PROVIDE (end, .)
+                0x0000ad74                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0xe6
+ *(.comment)
+ .comment       0x00000000       0x12 debug\rooFacebook2_platform.os
+ .comment       0x00000012       0x12 debug\rooFacebook2.os
+ .comment       0x00000024       0x12 debug\rooFacebook2_register.os
+ .comment       0x00000036       0x2b C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .comment       0x00000061       0x2b C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .comment       0x0000008c       0x12 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .comment       0x0000009e       0x12 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .comment       0x000000b0       0x12 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .comment       0x000000c2       0x12 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .comment       0x000000d4       0x12 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x480
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000      0x1c0 debug\rooFacebook2_platform.os
+ .debug_aranges
+                0x000001c0       0xd0 debug\rooFacebook2.os
+ .debug_aranges
+                0x00000290       0xd0 debug\rooFacebook2_register.os
+ .debug_aranges
+                0x00000360       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+ .debug_aranges
+                0x00000380       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .debug_aranges
+                0x000003a0       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .debug_aranges
+                0x000003c0       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+ .debug_aranges
+                0x000003e0       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .debug_aranges
+                0x00000400       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .debug_aranges
+                0x00000420       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x00000440       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x00000460       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)
+
+.debug_pubnames
+                0x00000000      0xc4a
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x65a debug\rooFacebook2_platform.os
+ .debug_pubnames
+                0x0000065a      0x300 debug\rooFacebook2.os
+ .debug_pubnames
+                0x0000095a       0x3e debug\rooFacebook2_register.os
+ .debug_pubnames
+                0x00000998       0x45 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .debug_pubnames
+                0x000009dd      0x177 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .debug_pubnames
+                0x00000b54       0xb7 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .debug_pubnames
+                0x00000c0b       0x1f c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .debug_pubnames
+                0x00000c2a       0x20 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+
+.debug_info     0x00000000     0xa395
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x6bf9 debug\rooFacebook2_platform.os
+ .debug_info    0x00006bf9      0x698 debug\rooFacebook2.os
+ .debug_info    0x00007291      0x6b7 debug\rooFacebook2_register.os
+ .debug_info    0x00007948       0xcd c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+ .debug_info    0x00007a15       0xde c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .debug_info    0x00007af3     0x1424 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .debug_info    0x00008f17       0xd1 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+ .debug_info    0x00008fe8      0x636 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .debug_info    0x0000961e      0x606 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .debug_info    0x00009c24      0x5cb c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .debug_info    0x0000a1ef       0xd3 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+ .debug_info    0x0000a2c2       0xd3 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)
+
+.debug_abbrev   0x00000000      0xea4
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x315 debug\rooFacebook2_platform.os
+ .debug_abbrev  0x00000315       0xfd debug\rooFacebook2.os
+ .debug_abbrev  0x00000412      0x105 debug\rooFacebook2_register.os
+ .debug_abbrev  0x00000517       0x14 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+ .debug_abbrev  0x0000052b       0x6a c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .debug_abbrev  0x00000595      0x3bb c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .debug_abbrev  0x00000950       0x14 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+ .debug_abbrev  0x00000964      0x220 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .debug_abbrev  0x00000b84      0x18b c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .debug_abbrev  0x00000d0f      0x16d c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000e7c       0x14 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x00000e90       0x14 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)
+
+.debug_line     0x00000000     0x1823
+ *(.debug_line)
+ .debug_line    0x00000000      0x6ff debug\rooFacebook2_platform.os
+ .debug_line    0x000006ff      0x238 debug\rooFacebook2.os
+ .debug_line    0x00000937      0x2d2 debug\rooFacebook2_register.os
+ .debug_line    0x00000c09       0x81 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+ .debug_line    0x00000c8a       0x87 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .debug_line    0x00000d11      0x4aa c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .debug_line    0x000011bb       0xcd c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+ .debug_line    0x00001288      0x1aa c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .debug_line    0x00001432      0x169 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .debug_line    0x0000159b      0x159 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .debug_line    0x000016f4       0xa8 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+ .debug_line    0x0000179c       0x87 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)
+
+.debug_frame    0x00000000      0xf98
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x608 debug\rooFacebook2_platform.os
+ .debug_frame   0x00000608      0x294 debug\rooFacebook2.os
+ .debug_frame   0x0000089c      0x298 debug\rooFacebook2_register.os
+ .debug_frame   0x00000b34       0x60 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .debug_frame   0x00000b94      0x248 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .debug_frame   0x00000ddc      0x108 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .debug_frame   0x00000ee4       0x44 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .debug_frame   0x00000f28       0x48 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .debug_frame   0x00000f70       0x28 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+
+.debug_str      0x00000000     0x6670
+ *(.debug_str)
+ .debug_str     0x00000000     0x571f debug\rooFacebook2_platform.os
+                               0x5904 (size before relaxing)
+ .debug_str     0x0000571f      0x105 debug\rooFacebook2.os
+                                0x53a (size before relaxing)
+ .debug_str     0x00005824      0x369 debug\rooFacebook2_register.os
+                                0x57f (size before relaxing)
+ .debug_str     0x00005b8d       0x95 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+                                 0xba (size before relaxing)
+ .debug_str     0x00005c22      0x7ee c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+                                0x8d0 (size before relaxing)
+ .debug_str     0x00006410      0x119 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+                                0x436 (size before relaxing)
+ .debug_str     0x00006529      0x13d c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+                                0x1ed (size before relaxing)
+ .debug_str     0x00006666        0xa c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+                                0x1ee (size before relaxing)
+
+.debug_loc      0x00000000     0x3215
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x943 debug\rooFacebook2_platform.os
+ .debug_loc     0x00000943      0x3dc debug\rooFacebook2.os
+ .debug_loc     0x00000d1f      0x3e9 debug\rooFacebook2_register.os
+ .debug_loc     0x00001108      0x120 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .debug_loc     0x00001228      0xfef c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .debug_loc     0x00002217      0x2f9 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .debug_loc     0x00002510      0x6cf c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .debug_loc     0x00002bdf      0x636 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x680
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x1b0 debug\rooFacebook2_platform.os
+ .debug_ranges  0x000001b0       0xc0 debug\rooFacebook2.os
+ .debug_ranges  0x00000270       0xc0 debug\rooFacebook2_register.os
+ .debug_ranges  0x00000330      0x1f8 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .debug_ranges  0x00000528       0x30 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .debug_ranges  0x00000558       0xa0 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .debug_ranges  0x000005f8       0x88 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+OUTPUT(C:\soft\Marmalade\5.2\extensions\rooFacebook2\lib\android\librooFacebook2_d.so elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2b
+ .ARM.attributes
+                0x00000000       0x28 debug\rooFacebook2_platform.os
+ .ARM.attributes
+                0x00000028       0x28 debug\rooFacebook2.os
+ .ARM.attributes
+                0x00000050       0x28 debug\rooFacebook2_register.os
+ .ARM.attributes
+                0x00000078       0x2c C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(IwDebug.o)
+ .ARM.attributes
+                0x000000a4       0x2c C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.attributes
+                0x000000d0       0x19 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x000000e9       0x29 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(bpabi.o)
+ .ARM.attributes
+                0x00000112       0x29 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(unwind-arm.o)
+ .ARM.attributes
+                0x0000013b       0x19 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(libunwind.o)
+ .ARM.attributes
+                0x00000154       0x29 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(pr-support.o)
+ .ARM.attributes
+                0x0000017d       0x29 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_divdi3.o)
+ .ARM.attributes
+                0x000001a6       0x29 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivdi3.o)
+ .ARM.attributes
+                0x000001cf       0x19 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000001e8       0x19 c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a(_dvmd_lnx.o)

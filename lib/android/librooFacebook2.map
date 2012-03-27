@@ -1,0 +1,612 @@
+Archive member included because of file (symbol)
+
+C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+                              release\rooFacebook2_platform.os (s3eEdkThreadRunOnOS)
+
+Discarded input sections
+
+ _ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ _ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ _ZN7_JNIEnv16CallObjectMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ _ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ _ZN7_JNIEnv14CallLongMethodEP8_jobjectP10_jmethodIDz
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ _ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ .text          0x00000000        0x0 release\rooFacebook2_platform.os
+ .data          0x00000000        0x0 release\rooFacebook2_platform.os
+ .text._Z14getKnownObjectP8_jobject
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ .text._Z17removeKnownObejctP8_jobject
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ .text._Z14addKnownObjectP8_jobject
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ .note.GNU-stack
+                0x00000000        0x0 release\rooFacebook2_platform.os
+ .text          0x00000000        0x0 release\rooFacebook2.os
+ .data          0x00000000        0x0 release\rooFacebook2.os
+ .bss           0x00000000        0x0 release\rooFacebook2.os
+ .note.GNU-stack
+                0x00000000        0x0 release\rooFacebook2.os
+ .text          0x00000000        0x0 release\rooFacebook2_register.os
+ .data          0x00000000        0x0 release\rooFacebook2_register.os
+ .bss           0x00000000        0x0 release\rooFacebook2_register.os
+ .text._Z23rooFacebook2RegisterExtv
+                0x00000000        0x0 release\rooFacebook2_register.os
+ .note.GNU-stack
+                0x00000000        0x0 release\rooFacebook2_register.os
+ .text          0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .data          0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .bss           0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .text.s3eEdkThreadRunOnOSAsync
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.extab.text.s3eEdkThreadRunOnOSAsync
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.exidx.text.s3eEdkThreadRunOnOSAsync
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .text.s3eEdkErrorSetString
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.extab.text.s3eEdkErrorSetString
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .ARM.exidx.text.s3eEdkErrorSetString
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+ .note.GNU-stack
+                0x00000000        0x0 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD release\rooFacebook2_platform.os
+LOAD release\rooFacebook2.os
+LOAD release\rooFacebook2_register.os
+LOAD C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a
+LOAD C:\soft\Marmalade\5.2\s3e\edk\lib\android/libplaceholderplaceholderplaceholderplaceholderplaceholder.so
+LOAD C:\soft\Android\android-ndk-r7b\platforms\android-9\arch-arm\usr\lib/libc.so
+LOAD C:\soft\Android\android-ndk-r7b\platforms\android-9\arch-arm\usr\lib/libm.so
+LOAD C:\soft\Android\android-ndk-r7b\platforms\android-9\arch-arm\usr\lib/liblog.so
+LOAD C:\soft\Android\android-ndk-r7b\platforms\android-9\arch-arm\usr\lib/libstdc++.so
+LOAD c:/soft/Android/android-ndk-r7b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.4.3\libgcc.a
+                0x000000d4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000d4       0xb8
+ *(.hash)
+ .hash          0x000000d4       0xb8 release\rooFacebook2_platform.os
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x0000018c      0x1b0
+ *(.dynsym)
+ .dynsym        0x0000018c      0x1b0 release\rooFacebook2_platform.os
+
+.dynstr         0x0000033c      0x18f
+ *(.dynstr)
+ .dynstr        0x0000033c      0x18f release\rooFacebook2_platform.os
+
+.gnu.version    0x000004cc        0x0 load address 0x000004cb
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 release\rooFacebook2_platform.os
+
+.gnu.version_d  0x000004cc        0x0 load address 0x000004cb
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 release\rooFacebook2_platform.os
+
+.gnu.version_r  0x000004cc        0x0 load address 0x000004cb
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 release\rooFacebook2_platform.os
+
+.rel.dyn        0x000004cc      0x118
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ .rel.data.rel.ro
+                0x000004cc       0x60 release\rooFacebook2_platform.os
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x0000052c       0xb8 release\rooFacebook2_platform.os
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.plt        0x000005e4       0x50
+ *(.rel.plt)
+ .rel.plt       0x000005e4       0x50 release\rooFacebook2_platform.os
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(.init)
+
+.plt            0x00000634       0x8c
+ *(.plt)
+ .plt           0x00000634       0x8c release\rooFacebook2_platform.os
+
+.text           0x000006c0     0x2bf4
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text._ZN7_JNIEnv11GetMethodIDEP7_jclassPKcS3_
+                0x000006c0       0x1c release\rooFacebook2_platform.os
+                0x000006c0                _JNIEnv::GetMethodID(_jclass*, char const*, char const*)
+ .text._Z30rooFacebook2Terminate_platformv
+                0x000006dc       0x1c release\rooFacebook2_platform.os
+                0x000006dc                rooFacebook2Terminate_platform()
+ .text._Z20rooFacebook_DebugLogP7_JNIEnvP8_jobjectP8_jstring
+                0x000006f8       0x58 release\rooFacebook2_platform.os
+                0x000006f8                rooFacebook_DebugLog(_JNIEnv*, _jobject*, _jstring*)
+ .text._ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
+                0x00000750       0x38 release\rooFacebook2_platform.os
+                0x00000750                _JNIEnv::CallVoidMethod(_jobject*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv16CallObjectMethodEP8_jobjectP10_jmethodIDz
+                0x00000788       0x38 release\rooFacebook2_platform.os
+                0x00000788                _JNIEnv::CallObjectMethod(_jobject*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv13CallIntMethodEP8_jobjectP10_jmethodIDz
+                0x000007c0       0x38 release\rooFacebook2_platform.os
+                0x000007c0                _JNIEnv::CallIntMethod(_jobject*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv14CallLongMethodEP8_jobjectP10_jmethodIDz
+                0x000007f8       0x38 release\rooFacebook2_platform.os
+                0x000007f8                _JNIEnv::CallLongMethod(_jobject*, _jmethodID*, ...)
+ .text._ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
+                0x00000830       0x38 release\rooFacebook2_platform.os
+                0x00000830                _JNIEnv::NewObject(_jclass*, _jmethodID*, ...)
+ .text._Z38rooFacebook_extendAccessToken_platformP19rooFacebook_Session
+                0x00000868       0x60 release\rooFacebook2_platform.os
+                0x00000868                rooFacebook_extendAccessToken_platform(rooFacebook_Session*)
+ .text._Z37rooFacebook_setAccessExpires_platformP19rooFacebook_Sessionx
+                0x000008c8       0x6c release\rooFacebook2_platform.os
+                0x000008c8                rooFacebook_setAccessExpires_platform(rooFacebook_Session*, long long)
+ .text._Z37rooFacebook_getAccessExpires_platformP19rooFacebook_Session
+                0x00000934       0x60 release\rooFacebook2_platform.os
+                0x00000934                rooFacebook_getAccessExpires_platform(rooFacebook_Session*)
+ .text._Z27rooFacebook_logout_platformP19rooFacebook_Session
+                0x00000994       0x70 release\rooFacebook2_platform.os
+                0x00000994                rooFacebook_logout_platform(rooFacebook_Session*)
+ .text._Z46rooFacebook_extendAccessTokenIfNeeded_platformP19rooFacebook_Session
+                0x00000a04       0x70 release\rooFacebook2_platform.os
+                0x00000a04                rooFacebook_extendAccessTokenIfNeeded_platform(rooFacebook_Session*)
+ .text._Z35rooFacebook_isSessionValid_platformP19rooFacebook_Session
+                0x00000a74       0x70 release\rooFacebook2_platform.os
+                0x00000a74                rooFacebook_isSessionValid_platform(rooFacebook_Session*)
+ .text._Z35rooFacebook_setAccessToken_platformP19rooFacebook_SessionPKc
+                0x00000ae4       0x84 release\rooFacebook2_platform.os
+                0x00000ae4                rooFacebook_setAccessToken_platform(rooFacebook_Session*, char const*)
+ .text._Z30rooFacebook_authorize_platformP19rooFacebook_SessionPKc
+                0x00000b68       0x9c release\rooFacebook2_platform.os
+                0x00000b68                rooFacebook_authorize_platform(rooFacebook_Session*, char const*)
+ .text._ZL27s3eEdkAndroidFindClass_realPKc
+                0x00000c04       0xa0 release\rooFacebook2_platform.os
+ .text._Z35rooFacebook_getAccessToken_platformP19rooFacebook_Session
+                0x00000ca4       0xd0 release\rooFacebook2_platform.os
+                0x00000ca4                rooFacebook_getAccessToken_platform(rooFacebook_Session*)
+ .text._Z25rooFacebook2Init_platformv
+                0x00000d74      0x5c8 release\rooFacebook2_platform.os
+                0x00000d74                rooFacebook2Init_platform()
+ .text._Z41rooFacebook_requestWithGraphPath_platformP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x0000133c      0x1c0 release\rooFacebook2_platform.os
+                0x0000133c                rooFacebook_requestWithGraphPath_platform(rooFacebook_Session*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z27rooFacebook_dialog_platformP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x000014fc      0x1c0 release\rooFacebook2_platform.os
+                0x000014fc                rooFacebook_dialog_platform(rooFacebook_Session*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z50rooFacebook_requestWithGraphPathAndParams_platformP19rooFacebook_SessionPKcS2_PFiPvS3_S3_ES3_
+                0x000016bc      0x1e8 release\rooFacebook2_platform.os
+                0x000016bc                rooFacebook_requestWithGraphPathAndParams_platform(rooFacebook_Session*, char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z36rooFacebook_dialogAndParams_platformP19rooFacebook_SessionPKcS2_PFiPvS3_S3_ES3_
+                0x000018a4      0x1e8 release\rooFacebook2_platform.os
+                0x000018a4                rooFacebook_dialogAndParams_platform(rooFacebook_Session*, char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z25rooFacebook_init_platformPKcPFiPvS1_S1_ES1_
+                0x00001a8c      0x1b8 release\rooFacebook2_platform.os
+                0x00001a8c                rooFacebook_init_platform(char const*, int (*)(void*, void*, void*), void*)
+ .text._Z38rooFacebook_requestWithParams_platformP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x00001c44      0x1c0 release\rooFacebook2_platform.os
+                0x00001c44                rooFacebook_requestWithParams_platform(rooFacebook_Session*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z44rooFacebook_initWithUrlSchemeSuffix_platformPKcS0_PFiPvS1_S1_ES1_
+                0x00001e04      0x1dc release\rooFacebook2_platform.os
+                0x00001e04                rooFacebook_initWithUrlSchemeSuffix_platform(char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z63rooFacebook_requestWithGraphPathAndParamsAndHttpMethod_platformP19rooFacebook_SessionPKcS2_S2_PFiPvS3_S3_ES3_
+                0x00001fe0      0x204 release\rooFacebook2_platform.os
+                0x00001fe0                rooFacebook_requestWithGraphPathAndParamsAndHttpMethod_platform(rooFacebook_Session*, char const*, char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z42rooFacebook_requestWithMethodName_platformP19rooFacebook_SessionPKcS2_S2_PFiPvS3_S3_ES3_
+                0x000021e4      0x204 release\rooFacebook2_platform.os
+                0x000021e4                rooFacebook_requestWithMethodName_platform(rooFacebook_Session*, char const*, char const*, char const*, int (*)(void*, void*, void*), void*)
+ .text._Z27rooFacebook_RequestCallbackP7_JNIEnvP8_jobjectS2_P8_jstring
+                0x000023e8      0x134 release\rooFacebook2_platform.os
+                0x000023e8                rooFacebook_RequestCallback(_JNIEnv*, _jobject*, _jobject*, _jstring*)
+ .text._ZL26rooFacebook_DialogCallbackP7_JNIEnvP8_jobjectS2_P8_jstring
+                0x0000251c      0x134 release\rooFacebook2_platform.os
+ .text._ZL24rooFacebook_AuthCallbackP7_JNIEnvP8_jobjectS2_P8_jstring
+                0x00002650      0x130 release\rooFacebook2_platform.os
+ .text._Z34rooFacebook_deleteRequest_platformP19rooFacebook_Request
+                0x00002780       0xec release\rooFacebook2_platform.os
+                0x00002780                rooFacebook_deleteRequest_platform(rooFacebook_Request*)
+ .text._Z33rooFacebook_deleteDialog_platformP18rooFacebook_Dialog
+                0x0000286c       0xec release\rooFacebook2_platform.os
+                0x0000286c                rooFacebook_deleteDialog_platform(rooFacebook_Dialog*)
+ .text._Z34rooFacebook_deleteSession_platformP19rooFacebook_Session
+                0x00002958       0xec release\rooFacebook2_platform.os
+                0x00002958                rooFacebook_deleteSession_platform(rooFacebook_Session*)
+ .text.rooFacebook_deleteRequest
+                0x00002a44       0x10 release\rooFacebook2.os
+                0x00002a44                rooFacebook_deleteRequest
+ .text.rooFacebook_requestWithGraphPathAndParamsAndHttpMethod
+                0x00002a54       0x28 release\rooFacebook2.os
+                0x00002a54                rooFacebook_requestWithGraphPathAndParamsAndHttpMethod
+ .text.rooFacebook_requestWithGraphPathAndParams
+                0x00002a7c       0x20 release\rooFacebook2.os
+                0x00002a7c                rooFacebook_requestWithGraphPathAndParams
+ .text.rooFacebook_requestWithGraphPath
+                0x00002a9c       0x10 release\rooFacebook2.os
+                0x00002a9c                rooFacebook_requestWithGraphPath
+ .text.rooFacebook_requestWithMethodName
+                0x00002aac       0x28 release\rooFacebook2.os
+                0x00002aac                rooFacebook_requestWithMethodName
+ .text.rooFacebook_requestWithParams
+                0x00002ad4       0x10 release\rooFacebook2.os
+                0x00002ad4                rooFacebook_requestWithParams
+ .text.rooFacebook_deleteDialog
+                0x00002ae4       0x10 release\rooFacebook2.os
+                0x00002ae4                rooFacebook_deleteDialog
+ .text.rooFacebook_dialogAndParams
+                0x00002af4       0x20 release\rooFacebook2.os
+                0x00002af4                rooFacebook_dialogAndParams
+ .text.rooFacebook_dialog
+                0x00002b14       0x10 release\rooFacebook2.os
+                0x00002b14                rooFacebook_dialog
+ .text.rooFacebook_isSessionValid
+                0x00002b24       0x10 release\rooFacebook2.os
+                0x00002b24                rooFacebook_isSessionValid
+ .text.rooFacebook_deleteSession
+                0x00002b34       0x10 release\rooFacebook2.os
+                0x00002b34                rooFacebook_deleteSession
+ .text.rooFacebook_logout
+                0x00002b44       0x10 release\rooFacebook2.os
+                0x00002b44                rooFacebook_logout
+ .text.rooFacebook_extendAccessTokenIfNeeded
+                0x00002b54       0x10 release\rooFacebook2.os
+                0x00002b54                rooFacebook_extendAccessTokenIfNeeded
+ .text.rooFacebook_extendAccessToken
+                0x00002b64       0x10 release\rooFacebook2.os
+                0x00002b64                rooFacebook_extendAccessToken
+ .text.rooFacebook_setAccessExpires
+                0x00002b74       0x10 release\rooFacebook2.os
+                0x00002b74                rooFacebook_setAccessExpires
+ .text.rooFacebook_setAccessToken
+                0x00002b84       0x10 release\rooFacebook2.os
+                0x00002b84                rooFacebook_setAccessToken
+ .text.rooFacebook_getAccessExpires
+                0x00002b94       0x10 release\rooFacebook2.os
+                0x00002b94                rooFacebook_getAccessExpires
+ .text.rooFacebook_getAccessToken
+                0x00002ba4       0x10 release\rooFacebook2.os
+                0x00002ba4                rooFacebook_getAccessToken
+ .text.rooFacebook_authorize
+                0x00002bb4       0x10 release\rooFacebook2.os
+                0x00002bb4                rooFacebook_authorize
+ .text.rooFacebook_initWithUrlSchemeSuffix
+                0x00002bc4       0x10 release\rooFacebook2.os
+                0x00002bc4                rooFacebook_initWithUrlSchemeSuffix
+ .text.rooFacebook_init
+                0x00002bd4       0x10 release\rooFacebook2.os
+                0x00002bd4                rooFacebook_init
+ .text._Z21rooFacebook2Terminatev
+                0x00002be4       0x10 release\rooFacebook2.os
+                0x00002be4                rooFacebook2Terminate()
+ .text._Z16rooFacebook2Initv
+                0x00002bf4       0x10 release\rooFacebook2.os
+                0x00002bf4                rooFacebook2Init()
+ .text._ZL30rooFacebook_deleteRequest_wrapP19rooFacebook_Request
+                0x00002c04       0x24 release\rooFacebook2_register.os
+ .text._ZL59rooFacebook_requestWithGraphPathAndParamsAndHttpMethod_wrapP19rooFacebook_SessionPKcS2_S2_PFiPvS3_S3_ES3_
+                0x00002c28       0x4c release\rooFacebook2_register.os
+ .text._ZL46rooFacebook_requestWithGraphPathAndParams_wrapP19rooFacebook_SessionPKcS2_PFiPvS3_S3_ES3_
+                0x00002c74       0x44 release\rooFacebook2_register.os
+ .text._ZL37rooFacebook_requestWithGraphPath_wrapP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x00002cb8       0x3c release\rooFacebook2_register.os
+ .text._ZL38rooFacebook_requestWithMethodName_wrapP19rooFacebook_SessionPKcS2_S2_PFiPvS3_S3_ES3_
+                0x00002cf4       0x4c release\rooFacebook2_register.os
+ .text._ZL34rooFacebook_requestWithParams_wrapP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x00002d40       0x3c release\rooFacebook2_register.os
+ .text._ZL29rooFacebook_deleteDialog_wrapP18rooFacebook_Dialog
+                0x00002d7c       0x24 release\rooFacebook2_register.os
+ .text._ZL32rooFacebook_dialogAndParams_wrapP19rooFacebook_SessionPKcS2_PFiPvS3_S3_ES3_
+                0x00002da0       0x44 release\rooFacebook2_register.os
+ .text._ZL23rooFacebook_dialog_wrapP19rooFacebook_SessionPKcPFiPvS3_S3_ES3_
+                0x00002de4       0x3c release\rooFacebook2_register.os
+ .text._ZL31rooFacebook_isSessionValid_wrapP19rooFacebook_Session
+                0x00002e20       0x24 release\rooFacebook2_register.os
+ .text._ZL30rooFacebook_deleteSession_wrapP19rooFacebook_Session
+                0x00002e44       0x24 release\rooFacebook2_register.os
+ .text._ZL23rooFacebook_logout_wrapP19rooFacebook_Session
+                0x00002e68       0x24 release\rooFacebook2_register.os
+ .text._ZL42rooFacebook_extendAccessTokenIfNeeded_wrapP19rooFacebook_Session
+                0x00002e8c       0x24 release\rooFacebook2_register.os
+ .text._ZL34rooFacebook_extendAccessToken_wrapP19rooFacebook_Session
+                0x00002eb0       0x24 release\rooFacebook2_register.os
+ .text._ZL33rooFacebook_setAccessExpires_wrapP19rooFacebook_Sessionx
+                0x00002ed4       0x34 release\rooFacebook2_register.os
+ .text._ZL31rooFacebook_setAccessToken_wrapP19rooFacebook_SessionPKc
+                0x00002f08       0x28 release\rooFacebook2_register.os
+ .text._ZL33rooFacebook_getAccessExpires_wrapP19rooFacebook_Session
+                0x00002f30       0x34 release\rooFacebook2_register.os
+ .text._ZL31rooFacebook_getAccessToken_wrapP19rooFacebook_Session
+                0x00002f64       0x24 release\rooFacebook2_register.os
+ .text._ZL26rooFacebook_authorize_wrapP19rooFacebook_SessionPKc
+                0x00002f88       0x28 release\rooFacebook2_register.os
+ .text._ZL40rooFacebook_initWithUrlSchemeSuffix_wrapPKcS0_PFiPvS1_S1_ES1_
+                0x00002fb0       0x3c release\rooFacebook2_register.os
+ .text._ZL21rooFacebook_init_wrapPKcPFiPvS1_S1_ES1_
+                0x00002fec       0x38 release\rooFacebook2_register.os
+ .text.RegisterExt
+                0x00003024      0x260 release\rooFacebook2_register.os
+                0x00003024                RegisterExt
+ .text.s3eEdkThreadRunOnOS
+                0x00003284       0x30 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+                0x00003284                s3eEdkThreadRunOnOS
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini
+ *(.fini)
+                0x000032b4                PROVIDE (__etext, .)
+                0x000032b4                PROVIDE (_etext, .)
+                0x000032b4                PROVIDE (etext, .)
+
+.rodata         0x000032b4      0x7dc
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x000032b4      0x7dc release\rooFacebook2_platform.os
+                                0x80c (size before relaxing)
+ .rodata.str1.4
+                0x00000000       0x10 release\rooFacebook2_register.os
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab      0x00003a90        0xc
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab.text.s3eEdkThreadRunOnOS
+                0x00003a90        0xc C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+                0x00003a9c                __exidx_start = .
+
+.ARM.exidx      0x00003a9c        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx.text.s3eEdkThreadRunOnOS
+                0x00003a9c        0x8 C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+                0x00003aa4                __exidx_end = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x00003aa4                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00004aa4                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x00004aa4       0x30
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x00004aa4       0x30 release\rooFacebook2_platform.os
+
+.dynamic        0x00004ad4       0xa8
+ *(.dynamic)
+ .dynamic       0x00004ad4       0xa8 release\rooFacebook2_platform.os
+                0x00004ad4                _DYNAMIC
+                0x00004b7c                . = (. DATA_SEGMENT_RELRO_END 0x0)
+
+.got            0x00004b7c       0x90
+ *(.got.plt)
+ .got.plt       0x00004b7c       0x34 release\rooFacebook2_platform.os
+                0x00004b7c                _GLOBAL_OFFSET_TABLE_
+ *(.got)
+ .got           0x00004bb0       0x5c release\rooFacebook2_platform.os
+
+.data           0x00004c0c        0x0
+                0x00004c0c                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.data1
+ *(.data1)
+                0x00004c0c                _edata = .
+                0x00004c0c                PROVIDE (edata, .)
+                0x00004c0c                __bss_start = .
+                0x00004c0c                __bss_start__ = .
+
+.bss            0x00004c0c      0x15c
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 release\rooFacebook2_platform.os
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00004c0c      0x15c release\rooFacebook2_platform.os
+                0x00004d34                g_Str
+ *(COMMON)
+                0x00004d68                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00004d68                _bss_end__ = .
+                0x00004d68                __bss_end__ = .
+                0x00004d68                . = ALIGN (0x4)
+                0x00004d68                . = ALIGN (0x4)
+                0x00004d68                __end__ = .
+                0x00004d68                _end = .
+                0x00004d68                PROVIDE (end, .)
+                0x00004d68                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x61
+ *(.comment)
+ .comment       0x00000000       0x12 release\rooFacebook2_platform.os
+ .comment       0x00000012       0x12 release\rooFacebook2.os
+ .comment       0x00000024       0x12 release\rooFacebook2_register.os
+ .comment       0x00000036       0x2b C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+OUTPUT(C:\soft\Marmalade\5.2\extensions\rooFacebook2\lib\android\librooFacebook2.so elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2a
+ .ARM.attributes
+                0x00000000       0x28 release\rooFacebook2_platform.os
+ .ARM.attributes
+                0x00000028       0x28 release\rooFacebook2.os
+ .ARM.attributes
+                0x00000050       0x28 release\rooFacebook2_register.os
+ .ARM.attributes
+                0x00000078       0x2c C:\soft\Marmalade\5.2\s3e\edk\lib\android\libedk.a(edk_helpers.o)
