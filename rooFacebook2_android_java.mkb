@@ -46,6 +46,6 @@ files
 
 librarypath "$MARMALADE_ROOT/s3e/deploy/plugins/android/android.jar"
 librarypath "$MARMALADE_ROOT/s3e/loader/android/s3e_release.jar"
-#librarypath "c:\Users\user\my\tmp\s3e_release\s3e_release.jar"
+librarypath "$MARMALADE_ROOT/my/rooactivity.jar"
 
 option output-name=lib/android/rooFacebook2.jar

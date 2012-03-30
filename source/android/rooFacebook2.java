@@ -62,6 +62,8 @@ import org.json.JSONObject;
 import org.json.JSONArray;
 import org.json.JSONStringer;
 
+import com.roolez.marmalade.loader.RooActivity;
+
 class rooFacebook2 {
 
 	public native void AuthCallback(Object session, String json);
@@ -77,7 +79,7 @@ class rooFacebook2 {
 		int activityCode;
 
 		class FBActivityCallback implements
-				LoaderActivity.IRoolezActivityResult {
+			RooActivity.IRoolezActivityResult {
 
 			@Override
 			public void onActivityResult(int requestCode, int resultCode,
@@ -240,7 +242,7 @@ class rooFacebook2 {
 			return new FBServiceDelegateImpl();
 		}
 
-		LoaderActivity.IRoolezActivityResult getActivityResultCallback() {
+		RooActivity.IRoolezActivityResult getActivityResultCallback() {
 			return new FBActivityCallback();
 		}
 	}
@@ -414,7 +416,7 @@ class rooFacebook2 {
 	rooFacebook_Session m_firstSession = null;
 
 	public Object rooFacebook_init(String appId) {
-		DebugLog("rooFacebook_init");
+		DebugLog("rooFacebook_init CUSTOM LOADER");
 		rooFacebook_Session session = new rooFacebook_Session();
 
 		session.facebook = new Facebook(appId);
@@ -436,7 +438,8 @@ class rooFacebook2 {
 		if (m_firstSession == null) {
 			m_firstSession = session;
 			session.activityCode = FACEBOOK_DEFAULT_AUTH_ACTIVITY_CODE;
-			LoaderActivity.m_Activity.registerRoolezActivity(
+			RooActivity roo = (RooActivity)LoaderActivity.m_Activity;
+			roo.registerRoolezActivity(
 					session.activityCode, session.getActivityResultCallback());
 		}
 		return session;
@@ -534,9 +537,10 @@ class rooFacebook2 {
 		DebugLog("rooFacebook_deleteSession");
 		rooFacebook_Session session = (rooFacebook_Session) facebook;
 
-		if (session != null)
-			LoaderActivity.m_Activity
-					.unregisterRoolezActivity(session.activityCode);
+		if (session != null){
+			RooActivity roo = (RooActivity)LoaderActivity.m_Activity;
+			roo.unregisterRoolezActivity(session.activityCode);
+		}
 
 	}
 
